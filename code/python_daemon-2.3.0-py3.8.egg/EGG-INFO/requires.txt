@@ -1,0 +1,8 @@
+docutils
+lockfile>=0.10
+setuptools
+
+[test]
+coverage
+testscenarios>=0.4
+testtools

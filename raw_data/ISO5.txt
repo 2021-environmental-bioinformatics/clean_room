@@ -1,0 +1,13 @@
+2_2	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_2/2_2.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_2/2_2.raw__raw_reads.read_2.fastq.gz
+2_4     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_4/2_4.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_4/2_4.raw__raw_reads.read_2.fastq.gz
+2_10    /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_10/2_10.raw__raw_reads.read_1.fastq.gz     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_10/2_10.raw__raw_reads.read_2.fastq.gz
+3_1     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_1/3_1.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_1/3_1.raw__raw_reads.read_2.fastq.gz
+3_3     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_3/3_3.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_3/3_3.raw__raw_reads.read_2.fastq.gz			
+3_5     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_5/3_5.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_5/3_5.raw__raw_reads.read_2.fastq.gz
+3_4     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_4/3_4.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_4/3_4.raw__raw_reads.read_2.fastq.gz
+3_6     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_6/3_6.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_6/3_6.raw__raw_reads.read_2.fastq.gz
+3_9     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_9/3_9.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/3_9/3_9.raw__raw_reads.read_2.fastq.gz
+4_6     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_6/4_6.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_6/4_6.raw__raw_reads.read_2.fastq.gz
+4_7     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_7/4_7.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_7/4_7.raw__raw_reads.read_2.fastq.gz
+4_8     /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_8/4_8.raw__raw_reads.read_1.fastq.gz	/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/4_8/4_8.raw__raw_reads.read_2.fastq.gz
+

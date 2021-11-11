@@ -1,0 +1,1 @@
+2_2 /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_2/2_2.raw__raw_reads.read_1.fastq.gz /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/2_2/2_2.raw__raw_reads.read_2.fastq.gz

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gimmebio.seqs
+Version: 0.9.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: David Danko
+Author-email: dcdanko@gmail.com
+License: MIT license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: click
+Requires-Dist: pandas
+
+UNKNOWN
+
+

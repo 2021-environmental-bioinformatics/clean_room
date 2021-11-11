@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=iso5.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=180G
+#SBATCH --time=24:00:00
+#SBATCH --output=iso5_%j.log
+
+export OMP_NUM_THREADS=8
+
+cap2 run pipeline -c /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/ISO5

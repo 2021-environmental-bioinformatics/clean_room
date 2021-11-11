@@ -1,0 +1,3 @@
+[console_scripts]
+pangea-api = pangea_api.cli:main
+
