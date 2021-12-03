@@ -1,0 +1,14 @@
+Found jellyfish v1.1.12
+Kraken build set to minimize disk writes.
+Finding all library files
+Found 35784 sequence files (*.{fna,fa,ffn,fasta,fsa}) in the library directory.
+Creating k-mer set (step 1 of 6)...
+Using jellyfish
+Hash size not specified, using '32916098535'
+K-mer set created. [3h35m51.127s]
+Skipping step 2, no database reduction requested.
+Sorting k-mer set (step 3 of 6)...
+db_sort: Getting database into memory ...Loaded database with 29026298771 keys with k of 31 [val_len 4, key_len 8].
+slurmstepd: error: Job 1772161 exceeded memory limit (210670496 > 209715200), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 1772161 ON sm001 CANCELLED AT 2021-11-23T19:42:36 ***

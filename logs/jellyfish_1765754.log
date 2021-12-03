@@ -1,0 +1,56 @@
+2_10
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_10’: File exists
+2_2
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_2’: File exists
+2_4
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_4’: File exists
+2_5
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_5’: File exists
+2_6
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_6’: File exists
+2_7
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_7’: File exists
+2_8
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_8’: File exists
+2_9
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/2_9’: File exists
+3_1
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_1’: File exists
+3_3
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_3’: File exists
+3_4
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_4’: File exists
+3_5
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_5’: File exists
+3_6
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_6’: File exists
+3_7
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_7’: File exists
+gzip: gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/3_7.2.00.0_0.cor.fastq.gz: No such file or directory
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/3_7.1.00.0_0.cor.fastq.gz: No such file or directory
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/3_7.1.00.0_0.cor.fastq.gz: No such file or directory
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/3_7.2.00.0_0.cor.fastq.gz: No such file or directory
+3_8
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_8’: File exists
+3_9
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/3_9’: File exists
+4_1
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_1’: File exists
+4_2
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_2’: File exists
+4_3
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_3’: File exists
+4_4
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_4’: File exists
+4_5
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_5’: File exists
+gzip: gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/4_5.1.00.0_0.cor.fastq.gz: No such file or directory
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/4_5.2.00.0_0.cor.fastq.gz: No such file or directory
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/4_5.1.00.0_0.cor.fastq.gz: No such file or directory
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/4_5.2.00.0_0.cor.fastq.gz: No such file or directory
+4_6
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_6’: File exists
+4_7
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_7’: File exists
+4_8
+mkdir: cannot create directory ‘/vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/4_8’: File exists

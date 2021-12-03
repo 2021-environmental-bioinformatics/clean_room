@@ -1,0 +1,8 @@
+2_10
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected//corrected/2_10.1.00.0_0.cor.fastq.gz: No such file or directory
+2_2
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected//corrected/2_2.1.00.0_0.cor.fastq.gz: No such file or directory
+2_4
+gzip: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected//corrected/2_4.1.00.0_0.cor.fastq.gz: No such file or directory
+2_5
+slurmstepd: error: *** JOB 1765732 ON pn055 CANCELLED AT 2021-11-20T14:20:36 ***

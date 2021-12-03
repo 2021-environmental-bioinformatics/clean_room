@@ -1,0 +1,23 @@
+Failed to import extension module: "preclassify"
+Failed to import extension module: "strains"
+Failed to import extension module: "tcems"
+Traceback (most recent call last):
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/bin/cap2", line 33, in <module>
+    sys.exit(load_entry_point('cap2==0.4.1', 'console_scripts', 'cap2')())
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/click-8.0.3-py3.9.egg/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/cap2-0.4.1-py3.9.egg/cap2/cli.py", line 72, in cap_pipeline
+    samples = Sample.samples_from_manifest(manifest)
+  File "/vortexfs1/home/anmeyer/.conda/envs/test/lib/python3.9/site-packages/cap2-0.4.1-py3.9.egg/cap2/sample.py", line 32, in samples_from_manifest
+    samples.append(cls(*tkns))
+TypeError: __init__() missing 2 required positional arguments: 'sample_name' and 'read1'

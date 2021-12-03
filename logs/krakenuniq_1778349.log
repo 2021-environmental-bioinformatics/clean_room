@@ -1,0 +1,74 @@
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+read_merger.pl: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/3_7.1.00.0_0.cor.fastq.gz does not exist
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+read_merger.pl: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/4_5.1.00.0_0.cor.fastq.gz does not exist
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument
+/vortexfs1/home/anmeyer/.conda/envs/krakenuniq/libexec/classify -d /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb -i /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.idx -t 8 -C classifiedoutput -r report -a /vortexfs1/omics/env-bio/collaboration/clean_room/databases/taxDB -p 12 /dev/fd/0
+ Database /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb
+classify: unable to mmap /vortexfs1/omics/env-bio/collaboration/clean_room/databases/database.kdb: Invalid argument

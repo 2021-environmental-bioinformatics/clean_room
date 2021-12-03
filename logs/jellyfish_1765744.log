@@ -1,0 +1,9 @@
+2_10
+mkdir: cannot create directory ‘../output/’: File exists
+2_2
+mkdir: cannot create directory ‘../output/’: File exists
+2_4
+mkdir: cannot create directory ‘../output/’: File exists
+2_5
+mkdir: cannot create directory ‘../output/’: File exists
+slurmstepd: error: *** JOB 1765744 ON pn084 CANCELLED AT 2021-11-20T14:34:27 ***
