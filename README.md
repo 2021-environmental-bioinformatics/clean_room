@@ -5,11 +5,11 @@
 
 This document describes the steps taken to process a subset of samples from Danko et al. (2021) and our attempts to recreate the figures from their manuscript. 
 
-# General Notes
+## General Notes
 The cap2 pipeline was only used for the first preprocessing step, all other packages were downloaded and run individually.
-Parameters for these steps were taken, when present, from the source code for the cap2 pipeline (https://github.com/MetaSUB/CAP2/tree/master/cap2/pipeline)
+Parameters for these steps were taken, when present, from the source code for the cap2 pipeline (https://github.com/MetaSUB/CAP2/tree/master/cap2/pipeline).
 
-# Preprocessing 
+## Preprocessing 
 Generate adapter free reads, use first step of established cap2 pipeline. First and only use of pipeline.
 Run "prepro.qsub"
   Stage: "pre"; Config: "config.yaml"; Manifest: "ISO5.txt", "ISO68.txt"
@@ -28,7 +28,11 @@ Run "error_correction.qsub"
   --meta
 Output Error Corrected Reads to "output/error_corrected"
 
-# Assembly
+## Kmer Counts
+
+## Taxonomic Classification
+
+## Assembly
 Assmeble genomes for each sample  
 Run "assembly.qsub"
   MetaSPAdes pipeline (--only-assembler)
