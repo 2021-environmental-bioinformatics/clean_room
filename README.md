@@ -29,6 +29,28 @@ Run "error_correction.qsub"
 Output Error Corrected Reads to "output/error_corrected"
 
 ## Kmer Counts
+To count kmers for each sample, use Jellyfish v0.8.9. First, activate the `jellyfish.yml` file, located in `cleanroom/envs`. Then, run `jellyfish.qsub` with the input argument `samplelist`, which will output a binary file for each sample through the `jellyfish count` command. Flags: -m (31 or 15) -s 100M -t 8 -o 'mercounts(31 or 15).jf'
+
+To process the binary files, use `jellydump.sh` with `samplelist`, which will run the `jellyfish dump` command. Flags: defaults, -o counts(31 or 15).fa
+
+Then, to count singletons and total kmers, use the `jellycounts.sh` script with `samplelist`. This will output a text file that lists the sample name, the kmer length used, then the singleton count and the total kmer count.  
+
+Script: 
+```
+for i in $(cat ${1})
+do
+  echo $i
+  cd $i
+  echo '15'
+  wc -l counts15.fa
+  grep -o 1 counts15.fa | wc -l 
+  echo '31'
+  wc -l counts31.fa
+  grep -o 1 counts15.fa | wc -l
+  cd ..
+done
+```
+
 
 ## Taxonomic Classification
 
