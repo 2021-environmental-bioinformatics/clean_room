@@ -9,6 +9,9 @@ This document describes the steps taken to process a subset of samples from Dank
 The cap2 pipeline was only used for the first preprocessing step, all other packages were downloaded and run individually.
 Parameters for these steps were taken, when present, from the source code for the cap2 pipeline (https://github.com/MetaSUB/CAP2/tree/master/cap2/pipeline).
 
+## File Structure
+
+
 ## Preprocessing 
 Generate adapter free reads, use first step of established cap2 pipeline. First and only use of pipeline.
 Run "prepro.qsub"
@@ -51,8 +54,10 @@ do
 done
 ```
 
-
 ## Taxonomic Classification
+For taxonomic classification, first activate the conda environment `kraken2.yml`, then use the `kraken2` script with `samplelist` as the input argument. Flags: --db /vortexfs1/omics/env-bio/collaboration/databases/kraken2db_pluspf --threads 8 --output output_default --report report_default.kreport --paired
+
+To convert the kraken2 single outputs for each sample type, activate `kraken2-biom.yml`, use `rename-for-biom` with `samplelist`. The script will adjust file names and locations. The output will be a file called `cleanroom.biom`. Flags: default
 
 ## Assembly
 Assmeble genomes for each sample  
