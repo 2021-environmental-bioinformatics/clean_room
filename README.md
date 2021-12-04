@@ -10,6 +10,34 @@ The cap2 pipeline was only used for the first preprocessing step, all other pack
 Parameters for these steps were taken, when present, from the source code for the cap2 pipeline (https://github.com/MetaSUB/CAP2/tree/master/cap2/pipeline).
 
 ## File Structure
+<img width="710" alt="Screenshot 2021-12-04 at 3 08 12 PM" src="https://user-images.githubusercontent.com/47222962/144723204-60a42cb9-aa56-4e91-8f82-578cf769b099.png">
+The above image shows the top file structure of our repository. We will describe the contents of each folder below. 
+
+`analysis`: contains singleton counts file
+
+`code`: contains various GitHub repositories used to build programs investigated in the course of this project
+
+`config`: contains configuration files for the CAP2 pipeline
+
+`databases`: contains databases for the CAP2 pipeline
+
+`envs`: contains environments needed to execute the below commands. Please see documentation for which environemnt to use at which point. 
+
+`jupyter-notebooks`: contains final report and jupyter notebooks used for figure creation and analysis
+
+`logs`: contains logs from script runs throughout the course of the project
+
+`output`: 
+
+<img width="657" alt="Screenshot 2021-12-04 at 3 20 07 PM" src="https://user-images.githubusercontent.com/47222962/144723511-72266f75-4e23-457c-b5d2-bddd4733495b.png">
+
+Output contains folders for the output of each program. For short reads analysis and raw data, each sample has its own labeled folder within the program folder containing its specific output.
+
+`pangea-api`: program necessaryto download data from Pangea
+
+`raw_data`: contains raw data downloaded from Pangea
+
+`scripts`: contains  `goodscripts` i.e. scripts used for the final pipeline, and `testscripts`, i.e. those used in experimentation or for programs not used
 
 
 ## Preprocessing 
