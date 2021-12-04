@@ -1,0 +1,23 @@
+adapter_removal: {clean_read1: gz_fastq, clean_read2: gz_fastq}
+align_to_amr_genes: {m8: gz_m8, table: csv}
+align_to_sa_n315: {bam: bam}
+alpha_diversity_stats: {json: json}
+beta_diversity_stats: {json: json}
+count_31mers: {jf: jellyfish}
+filter_human_dna: {bam: bam, nonhuman_read1: gz_fastq, nonhuman_read2: gz_fastq}
+finch_sketch: {sketch: minsketch}
+hmp_site_dists: {metaphlan2: json}
+humann2_functional_profiling: {genes: tsv, m8: gz_m8, path_abunds: tsv, path_cov: tsv}
+humann2_normalize_genes: {ags_norm_genes: tsv, read_depth_norm_genes: tsv}
+krakenhll_taxonomy_profiling: {read_assignments: tsv, report: tsv, report_medium: tsv,
+  report_strict: tsv}
+mash_intersample_dists: {distance_table: csv}
+metaphlan2_taxonomy_profiling: {mpa: mpa}
+microbe_census: {stats: txt}
+microbe_directory_annotate: {json: json}
+quantify_macrobial: {bam: bam, tbl: json}
+raw_short_read_dna: {read1: gz_fastq, read2: gz_fastq}
+read_classification_proportions: {json: json}
+read_stats: {json: json}
+resistome_amrs: {classus: tsv, classus_normalized: csv, gene: tsv, gene_normalized: csv,
+  group: tsv, group_normalized: csv, mech: tsv, mech_normalized: csv, sam: sam}

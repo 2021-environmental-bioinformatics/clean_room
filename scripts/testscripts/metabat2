@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=metabat2
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=80G
+#SBATCH	--time=24:00:00
+#SBATCH	--output=metabat2_%j.log
+#export OMP_NUM_THREADS=36
+
+
+#Extra
+#declare -a Samples=("4_3" "4_4")
+#ISO
+declare -a Samples=("2_2" "2_4" "2_10" "3_1" "3_3" "3_5" "3_4" "3_6" "3_9" "4_6" "4_7" "4_8" "2_5" "2_6" "2_7" "2_8" "2_9" "3_8" "4_1" "4_2" "4_3" "4_4")
+
+for sample in ${Samples[@]}
+do
+
+#uses bwa index to prepare contigs file for bwa mem
+bwa index -p contigs -a bwtsw  /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/${sample}/contigs.fasta
+
+bwa mem -t 36 contigs /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/${sample}.1.fq /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/${sample}.2.fq > ${sample}.sam
+
+#sort samples with samtools for MetaBat2
+samtools sort -O bam -o ${sample}.bam -@ 36 ${sample}.sam
+
+runMetaBat.sh -t 36 -v /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/${sample}/contigs.fasta ${sample}.bam
+
+done

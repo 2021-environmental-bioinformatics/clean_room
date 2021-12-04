@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --partition=bigmem
+#SBATCH --job-name=runfile.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=800G
+#SBATCH --time=24:00:00
+#SBATCH --output=runfilesnake_%j.log
+export OMP_NUM_THREADS=8
+
+snakemake -s /vortexfs1/omics/env-bio/collaboration/clean_room/kraken2_classification/Snakefile --configfile config.yaml --jobs 8 --cores 8
+#use kraken2 braken pipeline for initial figure creation and calculation of alpha diversity and species richness. Must activate .yml file for env beforehand - classifications2

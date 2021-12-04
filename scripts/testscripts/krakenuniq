@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=krakenuniq.qsub
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=180G
+#SBATCH --time=24:00:00
+#SBATCH --output=krakenuniq_%j.log
+export OMP_NUM_THREADS=8
+
+for i in $(cat ${1})
+do
+  cd /vortexfs1/omics/env-bio/collaboration/clean_room/output/krakenuniq/$i
+  krakenuniq --report-file report --classified-out classifiedoutput --gzip-compressed --fastq --paired --threads 8 --db /vortexfs1/omics/env-bio/collaboration/clean_room/databases /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.1.00.0_0.cor.fastq.gz /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.2.00.0_0.cor.fastq.gz
+done

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=kraken-biom.qsub
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=15G
+#SBATCH --time=6:00:00
+#SBATCH --output=kraken-biom_%j.log
+export OMP_NUM_THREADS=8
+
+for i in $(cat ${1}) #loop over sample names 
+do
+	echo $i
+	mkdir /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken-biom/$i
+	cd /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken-biom/$i #enter sample directories to place output in specific files
+	kraken2 --db /vortexfs1/omics/env-bio/collaboration/databases/kraken2db_pluspf --threads 8 --output output_default --report report_default.kreport --paired /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.1.00.0_0.cor.fastq.gz /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.2.00.0_0.cor.fastq.gz #run kraken2 on files within error-corrected directory and save the outputs with standard names for later processing
+done

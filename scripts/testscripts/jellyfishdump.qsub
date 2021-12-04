@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=jellyfishdump.qsub
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=180G
+#SBATCH --time=24:00:00
+#SBATCH --output=jellyfishdump_%j.log
+export OMP_NUM_THREADS=8
+
+
+for i in $(cat ${1})
+do
+	echo $i
+	mkdir /vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/$i
+	cd /vortexfs1/omics/env-bio/collaboration/clean_room/output/jelly/$i
+	jellyfish count -m 31 -s 100M -t 8  <(zcat /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.1.00.0_0.cor.fastq.gz) <(zcat /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.2.00.0_0.cor.fastq.gz) -o 'mercounts31.jf'
+	jellyfish count -m 15 -s 100M -t 8  <(zcat /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.1.00.0_0.cor.fastq.gz) <(zcat /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/$i/corrected/$i.2.00.0_0.cor.fastq.gz) -o 'mercounts15.jf'
+done

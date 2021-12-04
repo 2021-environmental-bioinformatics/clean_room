@@ -1,0 +1,3 @@
+{bam: bam, csv: csv, fasta: fasta, fastg: fastg, fastqc: fastqc, gz_fastq: fastq.gz,
+  gz_m8: m8.gz, gz_tsv: tsv.gz, jellyfish: jf, json: json, m8: m8, minsketch: msh,
+  mpa: mpa.tsv, sam: sam, tsv: tsv, txt: txt, vcf: vcf}

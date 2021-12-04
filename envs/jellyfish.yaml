@@ -1,0 +1,9 @@
+name: jellyfish
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=2.7
+  - jellyfish
+prefix: /vortexfs1/home/anmeyer/.conda/envs/jellyfish

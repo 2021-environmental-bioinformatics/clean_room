@@ -1,0 +1,8 @@
+name: krakenuniq
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - curl
+prefix: /vortexfs1/home/anmeyer/.conda/envs/krakenuniq

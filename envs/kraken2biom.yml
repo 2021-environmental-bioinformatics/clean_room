@@ -1,0 +1,6 @@
+name: kraken2biom
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+prefix: /vortexfs1/home/anmeyer/.conda/envs/kraken2biom

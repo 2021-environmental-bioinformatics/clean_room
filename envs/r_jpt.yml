@@ -1,0 +1,11 @@
+name: r_jpt
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - r-recommended
+  - r-irkernel
+  - jupyter=1.0.0
+  - r-base=4.1.1
+prefix: /vortexfs1/home/anmeyer/.conda/envs/r_jpt

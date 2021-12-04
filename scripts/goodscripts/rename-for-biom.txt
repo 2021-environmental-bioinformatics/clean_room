@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=rename-for-biom.qsub
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=anmeyer@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=180G
+#SBATCH --time=24:00:00
+#SBATCH --output=rename-for-biom_%j.log
+export OMP_NUM_THREADS=8
+
+for i in $(cat ${1}) #loop over sample names 
+do
+	echo $i
+	echo /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/$i/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/$i_.kreport
+	cp /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/$i/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/$i/$i_.report #rename 
+	mv /vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/$i/$i.report /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/$i.report #move renamed files to biom-files directory for processing
+done
+cd /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/
+kraken-biom 2_10.report 2_2.report 2_4.report 2_5.report 2_6.report 2_7.report 2_8.report 2_9.report 3_1.report 3_3.report 3_4.report 3_5.report 3_6.report 3_8.report 3_9.report 4_1.report 4_2.report 4_3.report 4_4.report 4_6.report 4_7.report 4_8.report -o cleanroom.biom
+
