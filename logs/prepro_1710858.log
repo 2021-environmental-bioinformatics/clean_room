@@ -1,0 +1,205 @@
+Failed to import extension module: "covid"
+Failed to import extension module: "preclassify"
+Failed to import extension module: "strains"
+Failed to import extension module: "tcems"
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/config.py:12: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.blob = load(open(filename).read())
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/parameter.py:279: UserWarning: Parameter "python" with value "3" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+[DEBUG] <luigi> (2021-11-12 09:01:47,690): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 2_2/> is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,693): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 2_2/> is complete
+[INFO] <luigi> (2021-11-12 09:01:47,694): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_4b2cddf2a2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 09:01:47,694): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,775): Checking if <CapTask::cap2::remove_human::0a2556edb58b 2_2/> is complete
+[INFO] <luigi> (2021-11-12 09:01:47,777): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_4b2cddf2a2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 09:01:47,777): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,777): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,777): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,778): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 2_2/> is complete
+[INFO] <luigi> (2021-11-12 09:01:47,779): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_4b2cddf2a2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 09:01:47,779): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 09:01:47,780): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 2_2/> is complete
+[INFO] <luigi> (2021-11-12 09:01:47,810): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_4b2cddf2a2   has status   PENDING
+[INFO] <luigi> (2021-11-12 09:01:47,810): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_4b2cddf2a2   has status   DONE
+[DEBUG] <luigi> (2021-11-12 09:01:47,810): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 09:01:47,811): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 09:01:47,811): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 09:01:47,812): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 09:01:47,813): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 09:01:47,814): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 09:01:47,814): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 09:01:47,814): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 09:01:47,815): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 09:01:47,815): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[INFO] <luigi> (2021-11-12 09:01:47,815): Done scheduling tasks
+[INFO] <luigi> (2021-11-12 09:01:47,815): Running Worker with 1 processes
+[DEBUG] <luigi> (2021-11-12 09:01:47,815): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 09:01:47,816): Pending tasks: 9
+[INFO] <luigi> (2021-11-12 09:01:47,816): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) running   CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 09:01:47,816): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py:81: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  deps = yaml.load(f)
+[INFO] <cap2> (2021-11-12 09:01:47,832): conda-installing: bowtie2 with conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__glibc==2.17=0:   0%|          | 0/5 [00:00<?, ?it/s]Examining python=3.9:  20%|██        | 1/5 [00:00<00:00, 7073.03it/s]       Examining @/linux-64::__archspec==1=x86_64:  40%|████      | 2/5 [00:00<00:00, 25.28it/s]Examining @/linux-64::__unix==0=0:  60%|██████    | 3/5 [00:00<00:00, 37.86it/s]         Examining bowtie2:  80%|████████  | 4/5 [00:00<00:00, 50.42it/s]                                                                                Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for __glibc python bowtie2:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for python bowtie2:  20%|██        | 1/5 [00:00<00:00, 12.11it/s]                                                                                    
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found to be incompatible with each other:
+
+Output in format: Requested package -> Available versionsThe following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - bowtie2 -> libgcc-ng[version='>=9.3.0'] -> __glibc[version='>=2.17']
+  - python=3.9 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'bowtie2', '-y']
+[ERROR] <luigi> (2021-11-12 09:02:07,041): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) failed    CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 09:02:07,091): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 09:02:07,095): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 09:02:07,095): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 09:02:07,095): Pending tasks: 9
+[INFO] <luigi> (2021-11-12 09:02:07,095): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) running   CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 09:02:07,096): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <cap2> (2021-11-12 09:02:07,103): conda-installing: samtools=1.09 with conda install -p vendor/conda/CAP_v2 -c bioconda samtools=1.09 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__unix==0=0:   0%|          | 0/5 [00:00<?, ?it/s]Examining python=3.9:  20%|██        | 1/5 [00:00<00:00, 7503.23it/s]   Examining @/linux-64::__archspec==1=x86_64:  40%|████      | 2/5 [00:00<00:00, 25.43it/s]Examining @/linux-64::__glibc==2.17=0:  60%|██████    | 3/5 [00:00<00:00, 38.09it/s]     Examining samtools=1.09:  80%|████████  | 4/5 [00:00<00:00, 50.73it/s]                                                                                    Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for samtools python:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for samtools __glibc python:  20%|██        | 1/5 [00:00<00:00, 11.29it/s]                                                                                             
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found to be incompatible with each other:
+
+Output in format: Requested package -> Available versions
+
+Package openssl conflicts for:
+samtools=1.09 -> openssl[version='>=1.0.2p,<1.0.3a|>=1.0.2r,<1.0.3a|>=1.1.1a,<1.1.2a']
+python=3.9 -> openssl[version='>=1.1.1h,<1.1.2a|>=1.1.1i,<1.1.2a|>=1.1.1j,<1.1.2a|>=1.1.1k,<1.1.2a|>=1.1.1l,<1.1.2a']
+
+Package libgcc-ng conflicts for:
+samtools=1.09 -> ncurses[version='>=6.1,<6.2.0a0'] -> libgcc-ng[version='>=7.2.0|>=7.5.0']
+samtools=1.09 -> libgcc-ng[version='>=4.9|>=7.3.0']The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - feature:|@/linux-64::__glibc==2.17=0
+  - python=3.9 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'samtools=1.09', '-y']
+[ERROR] <luigi> (2021-11-12 09:02:16,259): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) failed    CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda samtools=1.09 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 09:02:16,266): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 09:02:16,268): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 09:02:16,268): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 09:02:16,268): Pending tasks: 9
+[INFO] <luigi> (2021-11-12 09:02:16,268): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) running   CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 09:02:16,269): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <cap2> (2021-11-12 09:02:16,279): conda-installing: bowtie2==2.4.1 with conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2==2.4.1 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__glibc==2.17=0:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__unix==0=0:  20%|██        | 1/5 [00:00<00:00, 5599.87it/s]Examining bowtie2==2.4.1:  40%|████      | 2/5 [00:00<00:00, 7061.12it/s]         Examining @/linux-64::__archspec==1=x86_64:  60%|██████    | 3/5 [00:00<00:00, 67.01it/s]Examining python=3.9:  80%|████████  | 4/5 [00:00<00:00, 89.11it/s]                                                                                         Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 __glibc python:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 python:  20%|██        | 1/5 [00:00<00:00, 44.90it/s]                                                                                    
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - bowtie2==2.4.1 -> python[version='>=3.6,<3.7.0a0|>=3.7,<3.8.0a0|>=3.8,<3.9.0a0']
+
+Your python: python=3.9
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - bowtie2==2.4.1 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+  - python=3.9 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'bowtie2==2.4.1', '-y']
+[ERROR] <luigi> (2021-11-12 09:02:23,821): [pid 44120] Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) failed    CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2==2.4.1 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 09:02:23,824): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 09:02:23,826): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 09:02:23,826): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 09:02:23,827): Done
+[DEBUG] <luigi> (2021-11-12 09:02:23,827): There are no more tasks to run at this time
+[DEBUG] <luigi> (2021-11-12 09:02:23,827): There are 9 pending tasks possibly being run by other workers
+[DEBUG] <luigi> (2021-11-12 09:02:23,827): There are 9 pending tasks unique to this worker
+[DEBUG] <luigi> (2021-11-12 09:02:23,827): There are 9 pending tasks last scheduled by this worker
+[INFO] <luigi> (2021-11-12 09:02:23,827): Worker Worker(salt=513990353, workers=1, host=pn044, username=matthew.baldes, pid=44120) was stopped. Shutting down Keep-Alive thread
+[INFO] <luigi> (2021-11-12 09:02:23,831): 
+===== Luigi Execution Summary =====
+
+Scheduled 12 tasks of which:
+* 3 complete ones were encountered:
+    - 1 AdapterRemoval(...)
+    - 1 CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml)
+    - 1 CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3)
+* 3 failed:
+    - 3 CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) ...
+* 6 were left pending, among these:
+    * 6 had failed dependencies:
+        - 1 CleanReads(...)
+        - 1 ErrorCorrectReads(...)
+        - 1 HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1)
+        - 1 MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1)
+        - 1 RemoveHumanReads(...)
+        ...
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+

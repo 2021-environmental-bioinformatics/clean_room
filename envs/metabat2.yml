@@ -1,0 +1,8 @@
+name: metabat2
+channels:
+  - defaults
+dependencies:
+  - metabat2
+  - samtools
+  - bwa
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/metabat2

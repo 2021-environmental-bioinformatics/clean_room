@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=gtdbtk_2
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=180G
+#SBATCH	--time=12:00:00
+#SBATCH	--output=gtdbtk_2_%j.log
+#export OMP_NUM_THREADS=36
+
+#Second round of gtdbtk, takes bins renamed as species name identified in first gtdbtk
+#Desired output from this is aligned sequences for use in iqtree
+
+gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/iqtree/MAGs --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk_2/MAGs  
+
+

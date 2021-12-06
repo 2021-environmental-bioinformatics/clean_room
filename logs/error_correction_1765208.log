@@ -1,0 +1,61 @@
+Command line: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/spades.py	--only-error-correction	--meta	-t	36	-1	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq	-2	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq	-o	/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.12
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+
+Output dir: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq']
+      right reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Other parameters:
+  Dir for temp files: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/tmp
+  Threads: 36
+  Memory limit (in Gb): 187
+
+
+======= SPAdes pipeline started. Log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from refs/heads/spades_3.13.1, git revision 9a9d54db2ff9abaac718155bf74c12ec9464e8ca
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/configs/config.info
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 36
+  0:00:00.001     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 187 Gb
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.031     4M / 4M    INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.031     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.031     4M / 4M    INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.031     4M / 4M    INFO   K-mer Counting           (kmer_data.cpp             : 280)   Estimating k-mer count
+  0:00:00.216   580M / 580M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+  0:01:39.721   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 23272390 reads
+  0:01:39.721   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  0:03:24.409   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 46544780 reads
+  0:03:24.409   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 299)   Total 46544780 reads processed
+  0:03:26.490   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 306)   Estimated 8364444251 distinct kmers
+  0:03:26.492   144M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 311)   Filtering singleton k-mers
+42 8 0
+nslots: 17179869184
+bits per slot: 8 range: 0000040000000000
+  0:03:26.492    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+slurmstepd: error: *** JOB 1765208 ON pn111 CANCELLED AT 2021-11-20T08:07:38 ***

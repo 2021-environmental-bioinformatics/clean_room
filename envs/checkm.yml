@@ -1,0 +1,6 @@
+name: CheckM
+channels:
+  - defaults
+dependencies:
+  - checkm-genome
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/CheckM

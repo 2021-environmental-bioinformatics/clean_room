@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=gtdbtk
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=180G
+#SBATCH	--time=12:00:00
+#SBATCH	--output=gtdbtk_%j.log
+#export OMP_NUM_THREADS=36
+
+
+#ISO Samples with quality bins, ISO5 3_3 is included even though it does not meet quality standard 
+declare -a ISO5=("3_3")
+
+declare -a ISO6=("2_5" "2_7" "2_8" "3_8" "4_1" "4_3" "4_4")
+
+#gtdbtk classification of quality bins
+for sample in ${ISO5[@]}
+do
+gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO5/qual_bins/${sample} --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO5/${sample}  
+done
+
+for sample in ${ISO6[@]}
+do
+gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/qual_bins/${sample} --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/${sample}
+done

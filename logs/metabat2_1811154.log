@@ -1,0 +1,598 @@
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_2/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_2.bam' at Thu Dec  2 22:42:51 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_2/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_2/contigs.fasta
+... 14258 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_2.bam
+Processing bam files
+Thread 0 finished: 2_2.bam with 280133 reads and 202327 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:42:56 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:42:56 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_2/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224256/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:42:56 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 292. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 887 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 292 of large (>= 1500) and 595 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 292
+[00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 292 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 292 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 292 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.5; 0 / 292 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 4 / 292 (P = 1.37%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 8 / 292 (P = 2.74%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.6; 15 / 292 (P = 5.14%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.2; 25 / 292 (P = 8.56%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.7; 41 / 292 (P = 14.04%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.4; 49 / 292 (P = 16.78%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.1; 71 / 292 (P = 24.32%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.8; 86 / 292 (P = 29.45%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.5; 99 / 292 (P = 33.90%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.0; 122 / 292 (P = 41.78%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 139 / 292 (P = 47.60%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 155 / 292 (P = 53.08%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 176 / 292 (P = 60.27%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 188 / 292 (P = 64.38%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.1; 200 / 292 (P = 68.49%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.7; 210 / 292 (P = 71.92%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.3; 227 / 292 (P = 77.74%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.9; 235 / 292 (P = 80.48%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.6; 240 / 292 (P = 82.19%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.2; 243 / 292 (P = 83.22%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.9; 245 / 292 (P = 83.90%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.4; 253 / 292 (P = 86.64%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 257 / 292 (P = 88.01%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.6; 259 / 292 (P = 88.70%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.1; 261 / 292 (P = 89.38%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.8; 262 / 292 (P = 89.73%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.7; 262 / 292 (P = 89.73%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.6; 262 / 292 (P = 89.73%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.5; 263 / 292 (P = 90.07%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.5; 265 / 292 (P = 90.75%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.6; 266 / 292 (P = 91.10%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.7; 266 / 292 (P = 91.10%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.8; 267 / 292 (P = 91.44%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.7; 269 / 292 (P = 92.12%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.6; 269 / 292 (P = 92.12%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.7; 269 / 292 (P = 92.12%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.7; 271 / 292 (P = 92.81%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.8; 273 / 292 (P = 93.49%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.8; 273 / 292 (P = 93.49%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.8; 273 / 292 (P = 93.49%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.9; 275 / 292 (P = 94.18%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.9; 276 / 292 (P = 94.52%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.9; 277 / 292 (P = 94.86%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.0; 277 / 292 (P = 94.86%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.1; 277 / 292 (P = 94.86%) round 49]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 70.00]                                             
+[00:00:00] Finished Building TNF Graph (12128 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 12128 edges
+[00:00:00] Traversing graph with 292 nodes and 12128 edges
+[00:00:00] Building SCR Graph and Binning (28 vertices and 16 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (57 vertices and 43 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (84 vertices and 84 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (111 vertices and 114 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (139 vertices and 211 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (167 vertices and 309 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (195 vertices and 438 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (222 vertices and 637 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (250 vertices and 1209 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (273 vertices and 2976 edges) [P = 95.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 2 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224256/bin
+[00:00:00] 85.42% (656871 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+2 bins (656871 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:42:56 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_4/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_4.bam' at Thu Dec  2 22:42:56 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_4/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_4/contigs.fasta
+... 16978 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_4.bam
+Processing bam files
+Thread 0 finished: 2_4.bam with 241938 reads and 71099 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:02 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:02 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_4/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224302/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:02 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 44. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 107 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 44 of large (>= 1500) and 63 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 44
+[00:00:00] Calculating TNF 34.1% (15 of 44), ETA 0:00:00    [00:00:00] Calculating TNF 90.9% (40 of 44), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 44 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 44 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 44 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 0 / 44 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 0 / 44 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 44 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 0 / 44 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.5; 0 / 44 (P = 0.00%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.2; 0 / 44 (P = 0.00%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.7; 0 / 44 (P = 0.00%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.3; 0 / 44 (P = 0.00%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.8; 0 / 44 (P = 0.00%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.4; 0 / 44 (P = 0.00%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.1; 0 / 44 (P = 0.00%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.8; 0 / 44 (P = 0.00%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 3 / 44 (P = 6.82%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 3 / 44 (P = 6.82%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.4; 3 / 44 (P = 6.82%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.0; 5 / 44 (P = 11.36%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.5; 5 / 44 (P = 11.36%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.1; 5 / 44 (P = 11.36%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.6; 5 / 44 (P = 11.36%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.1; 5 / 44 (P = 11.36%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.6; 7 / 44 (P = 15.91%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.1; 7 / 44 (P = 15.91%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.7; 7 / 44 (P = 15.91%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.4; 7 / 44 (P = 15.91%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.9; 8 / 44 (P = 18.18%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.0; 8 / 44 (P = 18.18%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.9; 8 / 44 (P = 18.18%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.0; 10 / 44 (P = 22.73%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.1; 12 / 44 (P = 27.27%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.1; 12 / 44 (P = 27.27%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.0; 12 / 44 (P = 27.27%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.9; 12 / 44 (P = 27.27%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.8; 12 / 44 (P = 27.27%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.9; 12 / 44 (P = 27.27%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.0; 12 / 44 (P = 27.27%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.0; 12 / 44 (P = 27.27%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.1; 12 / 44 (P = 27.27%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.1; 13 / 44 (P = 29.55%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.2; 15 / 44 (P = 34.09%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.3; 16 / 44 (P = 36.36%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.2; 16 / 44 (P = 36.36%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.3; 16 / 44 (P = 36.36%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.3; 19 / 44 (P = 43.18%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.4; 19 / 44 (P = 43.18%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.5; 20 / 44 (P = 45.45%) round 48]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.40]                                             
+[00:00:00] Finished Building TNF Graph (20 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 20 edges
+[00:00:00] Traversing graph with 44 nodes and 20 edges
+[00:00:00] Building SCR Graph and Binning (5 vertices and 3 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (9 vertices and 6 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (14 vertices and 11 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (17 vertices and 13 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224302/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:02 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_10/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_10.bam' at Thu Dec  2 22:43:02 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_10/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_10/contigs.fasta
+... 8837 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/2_10.bam
+Processing bam files
+Thread 0 finished: 2_10.bam with 109333 reads and 37626 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:05 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:05 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_10/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224305/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:05 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 12. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 35 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 12 of large (>= 1500) and 23 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 12
+[00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 12 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 12 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.7; 0 / 12 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 0 / 12 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 0 / 12 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 12 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.9; 0 / 12 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.4; 0 / 12 (P = 0.00%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.1; 0 / 12 (P = 0.00%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.8; 0 / 12 (P = 0.00%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.4; 0 / 12 (P = 0.00%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.0; 0 / 12 (P = 0.00%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.6; 2 / 12 (P = 16.67%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.2; 2 / 12 (P = 16.67%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 2 / 12 (P = 16.67%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 2 / 12 (P = 16.67%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.9; 2 / 12 (P = 16.67%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 2 / 12 (P = 16.67%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 2 / 12 (P = 16.67%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.9; 2 / 12 (P = 16.67%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.4; 2 / 12 (P = 16.67%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.1; 2 / 12 (P = 16.67%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.7; 3 / 12 (P = 25.00%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.2; 5 / 12 (P = 41.67%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.9; 5 / 12 (P = 41.67%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.6; 5 / 12 (P = 41.67%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.2; 5 / 12 (P = 41.67%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 6 / 12 (P = 50.00%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.4; 6 / 12 (P = 50.00%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.0; 6 / 12 (P = 50.00%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.9; 6 / 12 (P = 50.00%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.9; 6 / 12 (P = 50.00%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.8; 6 / 12 (P = 50.00%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.9; 6 / 12 (P = 50.00%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.9; 6 / 12 (P = 50.00%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.9; 6 / 12 (P = 50.00%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.9; 6 / 12 (P = 50.00%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.0; 6 / 12 (P = 50.00%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.1; 6 / 12 (P = 50.00%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.0; 7 / 12 (P = 58.33%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.1; 7 / 12 (P = 58.33%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.0; 7 / 12 (P = 58.33%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.0; 7 / 12 (P = 58.33%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.9; 7 / 12 (P = 58.33%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.9; 7 / 12 (P = 58.33%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.0; 7 / 12 (P = 58.33%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.1; 7 / 12 (P = 58.33%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.0; 7 / 12 (P = 58.33%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.9; 7 / 12 (P = 58.33%) round 49]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.90]                                             
+[00:00:00] Building TNF Graph 1483.3% (178 of 12), ETA 0:00:00     [32.1Gb / 187.5Gb]                           [00:00:00] Finished Building TNF Graph (12 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 12 edges
+[00:00:00] Traversing graph with 12 nodes and 12 edges
+[00:00:00] Building SCR Graph and Binning (2 vertices and 1 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (4 vertices and 2 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (5 vertices and 3 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (5 vertices and 4 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (6 vertices and 5 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (7 vertices and 5 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224305/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:05 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_1/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_1.bam' at Thu Dec  2 22:43:05 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_1/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_1/contigs.fasta
+... 20720 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_1.bam
+Processing bam files
+Thread 0 finished: 3_1.bam with 250037 reads and 113743 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:12 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:12 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_1/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224312/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:12 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 65. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 189 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 65 of large (>= 1500) and 124 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 65
+[00:00:00] Calculating TNF 6.2% (4 of 65), ETA 0:00:00    [00:00:00] Calculating TNF 36.9% (24 of 65), ETA 0:00:00    [00:00:00] Calculating TNF 87.7% (57 of 65), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 65 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 65 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 0 / 65 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 0 / 65 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.6; 0 / 65 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.3; 0 / 65 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.8; 2 / 65 (P = 3.08%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.5; 5 / 65 (P = 7.69%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.0; 5 / 65 (P = 7.69%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.7; 8 / 65 (P = 12.31%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.4; 8 / 65 (P = 12.31%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.0; 8 / 65 (P = 12.31%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.5; 14 / 65 (P = 21.54%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.0; 22 / 65 (P = 33.85%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 25 / 65 (P = 38.46%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 27 / 65 (P = 41.54%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.9; 29 / 65 (P = 44.62%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.5; 33 / 65 (P = 50.77%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.2; 34 / 65 (P = 52.31%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.8; 37 / 65 (P = 56.92%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.5; 40 / 65 (P = 61.54%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.2; 40 / 65 (P = 61.54%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.7; 41 / 65 (P = 63.08%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.4; 43 / 65 (P = 66.15%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.0; 45 / 65 (P = 69.23%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.7; 46 / 65 (P = 70.77%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.4; 49 / 65 (P = 75.38%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.9; 49 / 65 (P = 75.38%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.9; 50 / 65 (P = 76.92%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.9; 51 / 65 (P = 78.46%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.9; 51 / 65 (P = 78.46%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.9; 52 / 65 (P = 80.00%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.0; 53 / 65 (P = 81.54%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.0; 54 / 65 (P = 83.08%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.0; 54 / 65 (P = 83.08%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.9; 54 / 65 (P = 83.08%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.8; 54 / 65 (P = 83.08%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.9; 55 / 65 (P = 84.62%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.0; 55 / 65 (P = 84.62%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.9; 55 / 65 (P = 84.62%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.0; 55 / 65 (P = 84.62%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.1; 55 / 65 (P = 84.62%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.2; 55 / 65 (P = 84.62%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.3; 55 / 65 (P = 84.62%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.4; 55 / 65 (P = 84.62%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.5; 55 / 65 (P = 84.62%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.6; 55 / 65 (P = 84.62%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.6; 56 / 65 (P = 86.15%) round 48]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.50]                                             
+[00:00:00] Finished Building TNF Graph (553 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 553 edges
+[00:00:00] Traversing graph with 65 nodes and 553 edges
+[00:00:00] Building SCR Graph and Binning (8 vertices and 4 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (13 vertices and 8 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (19 vertices and 14 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (25 vertices and 26 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (31 vertices and 32 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (38 vertices and 45 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (44 vertices and 56 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (50 vertices and 83 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (55 vertices and 190 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224312/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:12 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_3/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_3.bam' at Thu Dec  2 22:43:12 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_3/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_3/contigs.fasta
+... 86842 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_3.bam
+Processing bam files
+Thread 0 finished: 3_3.bam with 1421436 reads and 571077 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:42 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:42 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_3/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224342/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:42 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 719. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 1618 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 719 of large (>= 1500) and 899 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 719
+[00:00:00] Calculating TNF 9.6% (69 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 14.0% (101 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 18.5% (133 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 26.3% (189 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 32.0% (230 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 37.7% (271 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 44.1% (317 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 48.5% (349 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 56.5% (406 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 62.9% (452 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 68.7% (494 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 73.7% (530 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 81.6% (587 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 86.9% (625 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 92.6% (666 of 719), ETA 0:00:00    [00:00:00] Calculating TNF 99.9% (718 of 719), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 719 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 719 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.5; 0 / 719 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 0 / 719 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 2 / 719 (P = 0.28%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 2 / 719 (P = 0.28%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.5; 9 / 719 (P = 1.25%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.1; 16 / 719 (P = 2.23%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.7; 28 / 719 (P = 3.89%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.4; 44 / 719 (P = 6.12%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.9; 64 / 719 (P = 8.90%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.6; 73 / 719 (P = 10.15%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.2; 88 / 719 (P = 12.24%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 106 / 719 (P = 14.74%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.2; 132 / 719 (P = 18.36%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 147 / 719 (P = 20.45%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 169 / 719 (P = 23.50%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.0; 189 / 719 (P = 26.29%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.5; 213 / 719 (P = 29.62%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.0; 237 / 719 (P = 32.96%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.5; 252 / 719 (P = 35.05%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.0; 277 / 719 (P = 38.53%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.7; 287 / 719 (P = 39.92%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.4; 298 / 719 (P = 41.45%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 309 / 719 (P = 42.98%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.5; 321 / 719 (P = 44.65%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.2; 331 / 719 (P = 46.04%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.9; 340 / 719 (P = 47.29%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.8; 351 / 719 (P = 48.82%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.8; 364 / 719 (P = 50.63%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.9; 369 / 719 (P = 51.32%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.9; 388 / 719 (P = 53.96%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.9; 397 / 719 (P = 55.22%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.9; 413 / 719 (P = 57.44%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.0; 436 / 719 (P = 60.64%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.9; 461 / 719 (P = 64.12%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.9; 486 / 719 (P = 67.59%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.0; 499 / 719 (P = 69.40%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.0; 516 / 719 (P = 71.77%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.9; 533 / 719 (P = 74.13%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.9; 541 / 719 (P = 75.24%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.8; 552 / 719 (P = 76.77%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.9; 560 / 719 (P = 77.89%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.0; 570 / 719 (P = 79.28%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.0; 582 / 719 (P = 80.95%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.1; 588 / 719 (P = 81.78%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.1; 597 / 719 (P = 83.03%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.2; 603 / 719 (P = 83.87%) round 48]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.10]                                             
+[00:00:00] Building TNF Graph 123.8% (890 of 719), ETA 0:00:00     [32.1Gb / 187.5Gb]                           [00:00:00] Finished Building TNF Graph (9009 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 9009 edges
+[00:00:00] Traversing graph with 719 nodes and 9009 edges
+[00:00:00] Building SCR Graph and Binning (70 vertices and 56 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (137 vertices and 162 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (205 vertices and 296 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (274 vertices and 479 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (343 vertices and 769 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (410 vertices and 1113 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (479 vertices and 1455 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (547 vertices and 2011 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (589 vertices and 2603 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 1 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224342/bin
+[00:00:00] 56.48% (1290779 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+1 bins (1290779 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:42 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_5/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_5.bam' at Thu Dec  2 22:43:42 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_5/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_5/contigs.fasta
+... 15221 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_5.bam
+Processing bam files
+Thread 0 finished: 3_5.bam with 200577 reads and 50008 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:47 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:47 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_5/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224347/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:47 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 12. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 34 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 12 of large (>= 1500) and 22 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 12
+[00:00:00] Calculating TNF 8.3% (1 of 12), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 12 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 12 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.7; 0 / 12 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 0 / 12 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 0 / 12 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 12 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.9; 0 / 12 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.4; 2 / 12 (P = 16.67%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.1; 2 / 12 (P = 16.67%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.8; 2 / 12 (P = 16.67%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.4; 2 / 12 (P = 16.67%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.0; 2 / 12 (P = 16.67%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.6; 2 / 12 (P = 16.67%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.2; 2 / 12 (P = 16.67%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 3 / 12 (P = 25.00%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 3 / 12 (P = 25.00%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.9; 3 / 12 (P = 25.00%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 3 / 12 (P = 25.00%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 3 / 12 (P = 25.00%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.9; 3 / 12 (P = 25.00%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.4; 3 / 12 (P = 25.00%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.1; 3 / 12 (P = 25.00%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.7; 5 / 12 (P = 41.67%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.2; 5 / 12 (P = 41.67%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.9; 5 / 12 (P = 41.67%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.6; 5 / 12 (P = 41.67%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.2; 6 / 12 (P = 50.00%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 6 / 12 (P = 50.00%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.4; 6 / 12 (P = 50.00%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.0; 6 / 12 (P = 50.00%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.9; 7 / 12 (P = 58.33%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.9; 7 / 12 (P = 58.33%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.8; 7 / 12 (P = 58.33%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.9; 7 / 12 (P = 58.33%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.9; 7 / 12 (P = 58.33%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.9; 8 / 12 (P = 66.67%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.9; 8 / 12 (P = 66.67%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.0; 9 / 12 (P = 75.00%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.1; 9 / 12 (P = 75.00%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.0; 9 / 12 (P = 75.00%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.1; 9 / 12 (P = 75.00%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.0; 9 / 12 (P = 75.00%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.0; 9 / 12 (P = 75.00%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.9; 9 / 12 (P = 75.00%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.9; 9 / 12 (P = 75.00%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.0; 9 / 12 (P = 75.00%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.1; 9 / 12 (P = 75.00%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.0; 9 / 12 (P = 75.00%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.9; 9 / 12 (P = 75.00%) round 49]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.90]                                             
+[00:00:00] Finished Building TNF Graph (21 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 21 edges
+[00:00:00] Traversing graph with 12 nodes and 21 edges
+[00:00:00] Building SCR Graph and Binning (2 vertices and 1 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (3 vertices and 2 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (5 vertices and 3 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (6 vertices and 4 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (7 vertices and 5 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (7 vertices and 5 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (8 vertices and 6 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (9 vertices and 12 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224347/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:47 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_4/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_4.bam' at Thu Dec  2 22:43:47 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_4/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_4/contigs.fasta
+... 25537 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_4.bam
+Processing bam files
+Thread 0 finished: 3_4.bam with 318614 reads and 105484 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:43:56 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:43:56 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_4/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224356/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:43:56 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 82. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 180 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 82 of large (>= 1500) and 97 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 82
+[00:00:00] Calculating TNF 4.9% (4 of 82), ETA 0:00:00    [00:00:00] Calculating TNF 37.8% (31 of 82), ETA 0:00:00    [00:00:00] Calculating TNF 80.5% (66 of 82), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 82 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 82 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 82 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.5; 0 / 82 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 0 / 82 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 82 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 0 / 82 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.6; 0 / 82 (P = 0.00%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.3; 0 / 82 (P = 0.00%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.0; 0 / 82 (P = 0.00%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.5; 2 / 82 (P = 2.44%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.1; 2 / 82 (P = 2.44%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.7; 2 / 82 (P = 2.44%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.3; 2 / 82 (P = 2.44%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.9; 3 / 82 (P = 3.66%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.6; 4 / 82 (P = 4.88%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.2; 6 / 82 (P = 7.32%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 7 / 82 (P = 8.54%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.3; 7 / 82 (P = 8.54%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.8; 8 / 82 (P = 9.76%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.5; 11 / 82 (P = 13.41%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.2; 11 / 82 (P = 13.41%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.7; 12 / 82 (P = 14.63%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.4; 12 / 82 (P = 14.63%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.1; 12 / 82 (P = 14.63%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.8; 12 / 82 (P = 14.63%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.5; 12 / 82 (P = 14.63%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.2; 14 / 82 (P = 17.07%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 14 / 82 (P = 17.07%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.6; 14 / 82 (P = 17.07%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.2; 14 / 82 (P = 17.07%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.7; 14 / 82 (P = 17.07%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.7; 14 / 82 (P = 17.07%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.6; 14 / 82 (P = 17.07%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.5; 14 / 82 (P = 17.07%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.4; 14 / 82 (P = 17.07%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.4; 14 / 82 (P = 17.07%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.5; 15 / 82 (P = 18.29%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.6; 15 / 82 (P = 18.29%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.6; 15 / 82 (P = 18.29%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.6; 17 / 82 (P = 20.73%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.7; 18 / 82 (P = 21.95%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.8; 18 / 82 (P = 21.95%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.7; 18 / 82 (P = 21.95%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.6; 18 / 82 (P = 21.95%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.6; 18 / 82 (P = 21.95%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.7; 18 / 82 (P = 21.95%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.8; 23 / 82 (P = 28.05%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.7; 26 / 82 (P = 31.71%) round 49]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.8; 28 / 82 (P = 34.15%) round 50]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.9; 31 / 82 (P = 37.80%) round 51]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 70.00]                                             
+[00:00:00] Finished Building TNF Graph (36 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 36 edges
+[00:00:00] Traversing graph with 82 nodes and 36 edges
+[00:00:00] Building SCR Graph and Binning (9 vertices and 11 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (17 vertices and 16 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (21 vertices and 20 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224356/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:43:56 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_6/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_6.bam' at Thu Dec  2 22:43:56 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_6/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_6/contigs.fasta
+... 56437 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_6.bam
+Processing bam files
+Thread 0 finished: 3_6.bam with 855698 reads and 310283 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:44:15 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:44:15 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_6/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224415/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:44:15 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 255. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 707 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 255 of large (>= 1500) and 447 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 255
+[00:00:00] Calculating TNF 2.7% (7 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 17.6% (45 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 34.5% (88 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 47.5% (121 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 67.5% (172 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 80.4% (205 of 255), ETA 0:00:00    [00:00:00] Calculating TNF 96.5% (246 of 255), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 255 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 255 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 255 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 0 / 255 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 255 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.9; 0 / 255 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.5; 0 / 255 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.0; 4 / 255 (P = 1.57%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.6; 11 / 255 (P = 4.31%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.3; 19 / 255 (P = 7.45%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.8; 22 / 255 (P = 8.63%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.5; 27 / 255 (P = 10.59%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.2; 30 / 255 (P = 11.76%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 40 / 255 (P = 15.69%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.2; 49 / 255 (P = 19.22%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 54 / 255 (P = 21.18%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.3; 58 / 255 (P = 22.75%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.9; 63 / 255 (P = 24.71%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.6; 68 / 255 (P = 26.67%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.2; 70 / 255 (P = 27.45%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.9; 73 / 255 (P = 28.63%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.5; 77 / 255 (P = 30.20%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.0; 88 / 255 (P = 34.51%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.5; 91 / 255 (P = 35.69%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.1; 98 / 255 (P = 38.43%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.7; 100 / 255 (P = 39.22%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.4; 102 / 255 (P = 40.00%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.1; 104 / 255 (P = 40.78%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.6; 104 / 255 (P = 40.78%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.7; 104 / 255 (P = 40.78%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.8; 107 / 255 (P = 41.96%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.8; 109 / 255 (P = 42.75%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.9; 110 / 255 (P = 43.14%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.0; 112 / 255 (P = 43.92%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.1; 115 / 255 (P = 45.10%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.1; 118 / 255 (P = 46.27%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.1; 120 / 255 (P = 47.06%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.2; 121 / 255 (P = 47.45%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.3; 128 / 255 (P = 50.20%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.3; 131 / 255 (P = 51.37%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.4; 138 / 255 (P = 54.12%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.4; 140 / 255 (P = 54.90%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.3; 143 / 255 (P = 56.08%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.3; 143 / 255 (P = 56.08%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.3; 153 / 255 (P = 60.00%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.2; 156 / 255 (P = 61.18%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.3; 160 / 255 (P = 62.75%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.4; 167 / 255 (P = 65.49%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.5; 169 / 255 (P = 66.27%) round 49]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.60]                                             
+[00:00:00] Finished Building TNF Graph (1299 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 1299 edges
+[00:00:00] Traversing graph with 255 nodes and 1299 edges
+[00:00:00] Building SCR Graph and Binning (25 vertices and 15 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (49 vertices and 52 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (73 vertices and 103 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (98 vertices and 242 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (122 vertices and 368 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (146 vertices and 439 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (149 vertices and 455 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224415/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:44:15 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_9/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_9.bam' at Thu Dec  2 22:44:15 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_9/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_9/contigs.fasta
+... 26907 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/3_9.bam
+Processing bam files
+Thread 0 finished: 3_9.bam with 360101 reads and 157690 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:44:25 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:44:25 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_9/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224425/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:44:25 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 107. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 321 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 107 of large (>= 1500) and 214 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 107
+[00:00:00] Calculating TNF 26.2% (28 of 107), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 107 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.8; 0 / 107 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.7; 0 / 107 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 107 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.5; 0 / 107 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 0 / 107 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 0 / 107 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.6; 0 / 107 (P = 0.00%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.1; 5 / 107 (P = 4.67%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.6; 12 / 107 (P = 11.21%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.1; 20 / 107 (P = 18.69%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.7; 29 / 107 (P = 27.10%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.4; 37 / 107 (P = 34.58%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.1; 40 / 107 (P = 37.38%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.7; 47 / 107 (P = 43.93%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 50 / 107 (P = 46.73%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.0; 56 / 107 (P = 52.34%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.7; 56 / 107 (P = 52.34%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 63 / 107 (P = 58.88%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.7; 65 / 107 (P = 60.75%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.3; 71 / 107 (P = 66.36%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.0; 74 / 107 (P = 69.16%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.7; 75 / 107 (P = 70.09%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.2; 77 / 107 (P = 71.96%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.9; 79 / 107 (P = 73.83%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.6; 80 / 107 (P = 74.77%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.3; 80 / 107 (P = 74.77%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.9; 81 / 107 (P = 75.70%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.6; 81 / 107 (P = 75.70%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.2; 83 / 107 (P = 77.57%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.8; 85 / 107 (P = 79.44%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.8; 85 / 107 (P = 79.44%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.7; 85 / 107 (P = 79.44%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.8; 86 / 107 (P = 80.37%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.7; 87 / 107 (P = 81.31%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.8; 89 / 107 (P = 83.18%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.8; 89 / 107 (P = 83.18%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.8; 89 / 107 (P = 83.18%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.8; 89 / 107 (P = 83.18%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.8; 90 / 107 (P = 84.11%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.8; 92 / 107 (P = 85.98%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.8; 92 / 107 (P = 85.98%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.9; 92 / 107 (P = 85.98%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.8; 93 / 107 (P = 86.92%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.8; 93 / 107 (P = 86.92%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.9; 93 / 107 (P = 86.92%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.0; 93 / 107 (P = 86.92%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.9; 95 / 107 (P = 88.79%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.0; 95 / 107 (P = 88.79%) round 49]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.0; 96 / 107 (P = 89.72%) round 50]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 70.00]                                             
+[00:00:00] Finished Building TNF Graph (1632 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 1632 edges
+[00:00:00] Traversing graph with 107 nodes and 1632 edges
+[00:00:00] Building SCR Graph and Binning (12 vertices and 7 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (22 vertices and 15 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (31 vertices and 28 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (41 vertices and 51 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (51 vertices and 66 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (61 vertices and 78 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (72 vertices and 137 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (82 vertices and 206 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (92 vertices and 549 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (92 vertices and 625 edges) [P = 95.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224425/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:44:25 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_6/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_6.bam' at Thu Dec  2 22:44:25 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_6/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_6/contigs.fasta
+... 31303 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_6.bam
+Processing bam files
+Thread 0 finished: 4_6.bam with 601176 reads and 199536 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:44:35 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:44:35 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_6/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224435/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:44:35 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 117. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 351 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 117 of large (>= 1500) and 234 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 117
+[00:00:00] Calculating TNF 1.7% (2 of 117), ETA 0:00:00    [00:00:00] Calculating TNF 34.2% (40 of 117), ETA 0:00:00    [00:00:00] Calculating TNF 72.6% (85 of 117), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 117 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.7; 0 / 117 (P = 0.00%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 0 / 117 (P = 0.00%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.5; 0 / 117 (P = 0.00%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 0 / 117 (P = 0.00%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.1; 0 / 117 (P = 0.00%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 0 / 117 (P = 0.00%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.7; 0 / 117 (P = 0.00%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.2; 4 / 117 (P = 3.42%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.7; 7 / 117 (P = 5.98%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.3; 12 / 117 (P = 10.26%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.0; 16 / 117 (P = 13.68%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.7; 19 / 117 (P = 16.24%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.2; 24 / 117 (P = 20.51%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.9; 36 / 117 (P = 30.77%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.6; 42 / 117 (P = 35.90%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 49 / 117 (P = 41.88%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.9; 57 / 117 (P = 48.72%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.6; 57 / 117 (P = 48.72%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 58 / 117 (P = 49.57%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.8; 64 / 117 (P = 54.70%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.4; 68 / 117 (P = 58.12%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.9; 80 / 117 (P = 68.38%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.6; 81 / 117 (P = 69.23%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.1; 83 / 117 (P = 70.94%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.8; 85 / 117 (P = 72.65%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.4; 88 / 117 (P = 75.21%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.0; 88 / 117 (P = 75.21%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.6; 89 / 117 (P = 76.07%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.2; 91 / 117 (P = 77.78%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.8; 91 / 117 (P = 77.78%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.8; 92 / 117 (P = 78.63%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.9; 94 / 117 (P = 80.34%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.8; 95 / 117 (P = 81.20%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.8; 95 / 117 (P = 81.20%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.9; 96 / 117 (P = 82.05%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.0; 98 / 117 (P = 83.76%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.9; 100 / 117 (P = 85.47%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.0; 100 / 117 (P = 85.47%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.0; 100 / 117 (P = 85.47%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.0; 100 / 117 (P = 85.47%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.1; 101 / 117 (P = 86.32%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.1; 101 / 117 (P = 86.32%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.2; 102 / 117 (P = 87.18%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.3; 103 / 117 (P = 88.03%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.3; 104 / 117 (P = 88.89%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.3; 105 / 117 (P = 89.74%) round 47]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.3; 105 / 117 (P = 89.74%) round 48]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.2; 106 / 117 (P = 90.60%) round 49]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.2; 106 / 117 (P = 90.60%) round 50]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.3; 108 / 117 (P = 92.31%) round 51]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.20]                                             
+[00:00:00] Finished Building TNF Graph (1855 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 1855 edges
+[00:00:00] Traversing graph with 117 nodes and 1855 edges
+[00:00:00] Building SCR Graph and Binning (12 vertices and 7 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (24 vertices and 15 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (35 vertices and 25 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (45 vertices and 40 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (56 vertices and 62 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (67 vertices and 92 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (78 vertices and 122 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (89 vertices and 206 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (101 vertices and 777 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (101 vertices and 798 edges) [P = 95.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224435/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:44:35 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_7/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_7.bam' at Thu Dec  2 22:44:36 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_7/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_7/contigs.fasta
+... 24077 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_7.bam
+Processing bam files
+Thread 0 finished: 4_7.bam with 546369 reads and 143071 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:44:44 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:44:44 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_7/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224444/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:44:44 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 59. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 172 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 59 of large (>= 1500) and 113 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 59
+[00:00:00] Calculating TNF 33.9% (20 of 59), ETA 0:00:00    [00:00:00] Calculating TNF 83.1% (49 of 59), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 59 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 2 / 59 (P = 3.39%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.4; 2 / 59 (P = 3.39%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 2 / 59 (P = 3.39%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.9; 2 / 59 (P = 3.39%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.5; 4 / 59 (P = 6.78%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.0; 4 / 59 (P = 6.78%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.5; 6 / 59 (P = 10.17%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.0; 8 / 59 (P = 13.56%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.5; 13 / 59 (P = 22.03%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.1; 14 / 59 (P = 23.73%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.8; 15 / 59 (P = 25.42%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.3; 18 / 59 (P = 30.51%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.0; 21 / 59 (P = 35.59%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.5; 23 / 59 (P = 38.98%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.2; 26 / 59 (P = 44.07%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.9; 28 / 59 (P = 47.46%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.5; 30 / 59 (P = 50.85%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.0; 30 / 59 (P = 50.85%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.5; 33 / 59 (P = 55.93%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.0; 33 / 59 (P = 55.93%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.7; 36 / 59 (P = 61.02%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.4; 36 / 59 (P = 61.02%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.0; 37 / 59 (P = 62.71%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.7; 37 / 59 (P = 62.71%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.3; 37 / 59 (P = 62.71%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.0; 37 / 59 (P = 62.71%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.1; 37 / 59 (P = 62.71%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.0; 38 / 59 (P = 64.41%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.1; 39 / 59 (P = 66.10%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.1; 40 / 59 (P = 67.80%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.2; 41 / 59 (P = 69.49%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.3; 41 / 59 (P = 69.49%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.2; 42 / 59 (P = 71.19%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.2; 42 / 59 (P = 71.19%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.2; 42 / 59 (P = 71.19%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.2; 42 / 59 (P = 71.19%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.2; 42 / 59 (P = 71.19%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.3; 42 / 59 (P = 71.19%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.3; 44 / 59 (P = 74.58%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.3; 44 / 59 (P = 74.58%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.2; 44 / 59 (P = 74.58%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.1; 44 / 59 (P = 74.58%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.2; 44 / 59 (P = 74.58%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.3; 45 / 59 (P = 76.27%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.2; 45 / 59 (P = 76.27%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.3; 46 / 59 (P = 77.97%) round 47]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.40]                                             
+[00:00:00] Finished Building TNF Graph (397 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 397 edges
+[00:00:00] Traversing graph with 59 nodes and 397 edges
+[00:00:00] Building SCR Graph and Binning (6 vertices and 4 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (12 vertices and 8 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (18 vertices and 13 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (23 vertices and 18 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (29 vertices and 37 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (34 vertices and 58 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (40 vertices and 98 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (43 vertices and 203 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224444/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:44:44 EST 2021
+Executing: 'jgi_summarize_bam_contig_depths --outputDepth contigs.fasta.depth.txt --percentIdentity 97 --minContigLength 1000 --minContigDepth 1.0  --referenceFasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_8/contigs.fasta /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_8.bam' at Thu Dec  2 22:44:44 EST 2021
+Output depth matrix to contigs.fasta.depth.txt
+Minimum percent identity for a mapped read: 0.97
+minContigLength: 1000
+minContigDepth: 1
+Reference fasta file /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_8/contigs.fasta
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to contigs.fasta.depth.txt
+Reading reference fasta file: /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_8/contigs.fasta
+... 45259 sequences
+0: Opening bam: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/4_8.bam
+Processing bam files
+Thread 0 finished: 4_8.bam with 1122770 reads and 315544 readsWellMapped
+Creating depth matrix file: contigs.fasta.depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+Finished jgi_summarize_bam_contig_depths at Thu Dec  2 22:45:00 EST 2021
+Creating depth file for metabat at Thu Dec  2 22:45:00 EST 2021
+Executing: 'metabat2  -t 36 -m 1500 --maxP 95 --minS 60 --maxEdges 200 --pTNF 0 --seed 10 --saveCls -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_8/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211202_224500/bin --abdFile contigs.fasta.depth.txt' at Thu Dec  2 22:45:00 EST 2021
+MetaBAT 2 (2.15 (Bioconda)) using minContig 1500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=10
+[00:00:00] Executing with 36 threads
+[00:00:00] Parsing abundance file
+[00:00:00] Parsing assembly file
+[00:00:00] Number of large contigs >= 1500 are 229. 
+[00:00:00] Reading abundance file
+[00:00:00] Finished reading 708 contigs and 1 coverages from contigs.fasta.depth.txt
+[00:00:00] Number of target contigs: 229 of large (>= 1500) and 479 of small ones (>=1000 & <1500). 
+[00:00:00] Start TNF calculation. nobs = 229
+[00:00:00] Calculating TNF 31.4% (72 of 229), ETA 0:00:00    [00:00:00] Calculating TNF 79.5% (182 of 229), ETA 0:00:00    [00:00:00] Calculating TNF 100.0% (229 of 229), ETA 0:00:00    [00:00:00] Finished TNF calculation.                                  
+[00:00:00] Preparing TNF Graph Building [pTNF = 99.9; 0 / 229 (P = 0.00%) round 1]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.6; 4 / 229 (P = 1.75%) round 2]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.3; 4 / 229 (P = 1.75%) round 3]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.2; 8 / 229 (P = 3.49%) round 4]               [00:00:00] Preparing TNF Graph Building [pTNF = 99.0; 9 / 229 (P = 3.93%) round 5]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.7; 11 / 229 (P = 4.80%) round 6]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.4; 14 / 229 (P = 6.11%) round 7]               [00:00:00] Preparing TNF Graph Building [pTNF = 98.1; 16 / 229 (P = 6.99%) round 8]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.6; 26 / 229 (P = 11.35%) round 9]               [00:00:00] Preparing TNF Graph Building [pTNF = 97.1; 42 / 229 (P = 18.34%) round 10]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.8; 47 / 229 (P = 20.52%) round 11]               [00:00:00] Preparing TNF Graph Building [pTNF = 96.3; 69 / 229 (P = 30.13%) round 12]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.9; 85 / 229 (P = 37.12%) round 13]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.6; 102 / 229 (P = 44.54%) round 14]               [00:00:00] Preparing TNF Graph Building [pTNF = 95.2; 115 / 229 (P = 50.22%) round 15]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.8; 127 / 229 (P = 55.46%) round 16]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.4; 133 / 229 (P = 58.08%) round 17]               [00:00:00] Preparing TNF Graph Building [pTNF = 94.1; 139 / 229 (P = 60.70%) round 18]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.6; 148 / 229 (P = 64.63%) round 19]               [00:00:00] Preparing TNF Graph Building [pTNF = 93.1; 156 / 229 (P = 68.12%) round 20]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.7; 160 / 229 (P = 69.87%) round 21]               [00:00:00] Preparing TNF Graph Building [pTNF = 92.4; 161 / 229 (P = 70.31%) round 22]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.9; 164 / 229 (P = 71.62%) round 23]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.6; 165 / 229 (P = 72.05%) round 24]               [00:00:00] Preparing TNF Graph Building [pTNF = 91.1; 172 / 229 (P = 75.11%) round 25]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.6; 178 / 229 (P = 77.73%) round 26]               [00:00:00] Preparing TNF Graph Building [pTNF = 90.1; 179 / 229 (P = 78.17%) round 27]               [00:00:00] Preparing TNF Graph Building [pTNF = 89.8; 179 / 229 (P = 78.17%) round 28]               [00:00:00] Preparing TNF Graph Building [pTNF = 88.8; 179 / 229 (P = 78.17%) round 29]               [00:00:00] Preparing TNF Graph Building [pTNF = 87.8; 185 / 229 (P = 80.79%) round 30]               [00:00:00] Preparing TNF Graph Building [pTNF = 86.7; 186 / 229 (P = 81.22%) round 31]               [00:00:00] Preparing TNF Graph Building [pTNF = 85.7; 188 / 229 (P = 82.10%) round 32]               [00:00:00] Preparing TNF Graph Building [pTNF = 84.7; 188 / 229 (P = 82.10%) round 33]               [00:00:00] Preparing TNF Graph Building [pTNF = 83.6; 189 / 229 (P = 82.53%) round 34]               [00:00:00] Preparing TNF Graph Building [pTNF = 82.6; 190 / 229 (P = 82.97%) round 35]               [00:00:00] Preparing TNF Graph Building [pTNF = 81.7; 194 / 229 (P = 84.72%) round 36]               [00:00:00] Preparing TNF Graph Building [pTNF = 80.6; 195 / 229 (P = 85.15%) round 37]               [00:00:00] Preparing TNF Graph Building [pTNF = 79.7; 196 / 229 (P = 85.59%) round 38]               [00:00:00] Preparing TNF Graph Building [pTNF = 78.8; 196 / 229 (P = 85.59%) round 39]               [00:00:00] Preparing TNF Graph Building [pTNF = 77.7; 198 / 229 (P = 86.46%) round 40]               [00:00:00] Preparing TNF Graph Building [pTNF = 76.6; 200 / 229 (P = 87.34%) round 41]               [00:00:00] Preparing TNF Graph Building [pTNF = 75.6; 201 / 229 (P = 87.77%) round 42]               [00:00:00] Preparing TNF Graph Building [pTNF = 74.5; 202 / 229 (P = 88.21%) round 43]               [00:00:00] Preparing TNF Graph Building [pTNF = 73.5; 205 / 229 (P = 89.52%) round 44]               [00:00:00] Preparing TNF Graph Building [pTNF = 72.6; 206 / 229 (P = 89.96%) round 45]               [00:00:00] Preparing TNF Graph Building [pTNF = 71.6; 208 / 229 (P = 90.83%) round 46]               [00:00:00] Preparing TNF Graph Building [pTNF = 70.7; 208 / 229 (P = 90.83%) round 47]               [00:00:00] Finished Preparing TNF Graph Building [pTNF = 69.70]                                             
+[00:00:00] Finished Building TNF Graph (5263 edges) [32.1Gb / 187.5Gb]                                          
+[00:00:00] Applying coverage correlations to TNF graph with 5263 edges
+[00:00:00] Traversing graph with 229 nodes and 5263 edges
+[00:00:00] Building SCR Graph and Binning (22 vertices and 14 edges) [P = 9.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (44 vertices and 47 edges) [P = 19.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (67 vertices and 73 edges) [P = 28.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (88 vertices and 103 edges) [P = 38.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (109 vertices and 163 edges) [P = 47.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (131 vertices and 225 edges) [P = 57.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (153 vertices and 387 edges) [P = 66.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (175 vertices and 645 edges) [P = 76.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (196 vertices and 1315 edges) [P = 85.50%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Building SCR Graph and Binning (199 vertices and 1557 edges) [P = 95.00%; 32.1Gb / 187.5Gb]                           
+[00:00:00] Rescuing singleton large contigs
+[00:00:00] There are 0 bins already
+[00:00:00] Outputting bins
+[00:00:00] Saving cluster membership matrix to contigs.fasta.metabat-bins-v-20211202_224500/bin
+[00:00:00] 0.00% (0 bases) of large (>=1500) and 0.00% (0 bases) of small (<1500) contigs were binned.
+0 bins (0 bases in total) formed.
+[00:00:00] Finished
+Finished metabat2 at Thu Dec  2 22:45:00 EST 2021

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=prokka
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=180G
+#SBATCH	--time=12:00:00
+#SBATCH	--output=prokka_%j.log
+#export OMP_NUM_THREADS=36
+
+#Second pass of prokka to associate proteins with specific bins for samples with more than one bin present. The first pass annotated for each sample but did not distinguish between bins in 2_5 and 2_7.
+
+#General samples
+#declare -a ISO6=("2_5" "2_7" "2_8" "3_8" "4_1" "4_3" "4_4")
+
+#Specific bins
+declare -a bins=("2_7bin.11.fa"  "2_7bin.12.fa"  "2_7bin.16.fa"  "2_7bin.19.fa"  "2_7bin.20.fa"  "2_7bin.3.fa"  "2_7bin.6.fa" "2_7bin.8.fa" "2_5bin.15.fa"  "2_5bin.1.fa"  "2_5bin.3.fa"  "2_5bin.8.fa"  "2_5bin.9.fa")
+
+for sample in ${bins[@]}
+do
+prokka --cpus 36 --prefix ${sample} --outdir /vortexfs1/omics/env-bio/collaboration/clean_room/output/prokka_2/ISO6-8/${sample} /vortexfs1/omics/env-bio/collaboration/clean_room/output/prokka_2/${sample}
+done

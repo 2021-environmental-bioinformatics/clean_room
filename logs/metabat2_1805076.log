@@ -1,0 +1,110 @@
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/2_2 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_2/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203245 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/2_4 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_4/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203257 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/2_10 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_10/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203269 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_1 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_1/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203281 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_3 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_3/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203293 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_5 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_5/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203305 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_4 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_4/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203317 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_6 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_6/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203329 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_9 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_9/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203341 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_6 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_6/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203353 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_7 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_7/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203365 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_8 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_8/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203377 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/2_5 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_5/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203389 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/2_6 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_6/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203401 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/2_7 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_7/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203413 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/2_8 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_8/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203425 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/2_9 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/2_9/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203437 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/3_8 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/3_8/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203449 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/4_1 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_1/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203462 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/4_2 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_2/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203474 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/4_3 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_3/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203486 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}
+Skipping jgi_summarize_bam_contig_depths as contigs.fasta.depth.txt already exists
+Executing: 'metabat2  -t 36 -o /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO6-8/bins/4_4 -v --inFile /vortexfs1/omics/env-bio/collaboration/clean_room/output/assembly/4_4/contigs.fasta --outFile contigs.fasta.metabat-bins-v-20211201_125936/bin --abdFile contigs.fasta.depth.txt' at Wed Dec  1 12:59:36 EST 2021
+terminate called after throwing an instance of 'boost::wrapexcept<boost::program_options::multiple_occurrences>'
+  what():  option '--outFile' cannot be specified more than once
+/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/runMetaBat.sh: line 125: 203498 Aborted                 $MB $metabatopts --inFile $assembly --outFile $outname --abdFile ${depth}

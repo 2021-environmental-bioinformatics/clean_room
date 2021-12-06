@@ -1,0 +1,6 @@
+name: prokka
+channels:
+  - defaults
+dependencies:
+  - prokka
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/prokka

@@ -1,0 +1,48 @@
+[2021-12-03 15:53:05] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:05] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO5/3_3 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO5/3_3
+[2021-12-03 15:53:05] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:05] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO5/3_3. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:05] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:05] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:05] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_5 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/2_5
+[2021-12-03 15:53:05] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:05] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_5. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:05] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:05] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:05] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_7 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/2_7
+[2021-12-03 15:53:05] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:05] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_7. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:05] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:06] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:06] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_8 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/2_8
+[2021-12-03 15:53:06] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:06] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/2_8. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:06] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:06] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:06] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/3_8 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/3_8
+[2021-12-03 15:53:06] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:06] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/3_8. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:06] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:06] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:06] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_1 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/4_1
+[2021-12-03 15:53:06] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:06] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_1. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:06] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:06] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:06] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_3 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/4_3
+[2021-12-03 15:53:06] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:06] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_3. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:06] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.
+[2021-12-03 15:53:06] [1mINFO:[0m GTDB-Tk v1.3.0
+[2021-12-03 15:53:06] [1mINFO:[0m gtdbtk classify_wf --cpus 36 --extension fa --genome_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_4 --out_dir /vortexfs1/omics/env-bio/collaboration/clean_room/output/gtdbtk/ISO6-8/4_4
+[2021-12-03 15:53:06] [1mINFO:[0m Using GTDB-Tk reference data version r95: /vortexfs1/omics/env-bio/collaboration/databases/release95
+[2021-12-03 15:53:06] [1;31mERROR:[0m No genomes found in directory: /vortexfs1/omics/env-bio/collaboration/clean_room/output/CheckM/ISO6-8/4_4. Check the --extension flag used to identify genomes.
+
+[2021-12-03 15:53:06] [1;31mERROR:[0m Controlled exit resulting from an unrecoverable error or warning.

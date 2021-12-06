@@ -1,0 +1,6 @@
+name: metaspades
+channels:
+  - defaults
+dependencies:
+  - spades
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/metaspades

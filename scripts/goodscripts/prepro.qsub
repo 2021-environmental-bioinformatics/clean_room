@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=prepro
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=180G
+#SBATCH	--time=12:00:00
+#SBATCH	--output=prepro_%j.log
+#export OMP_NUM_THREADS=36
+
+#Runs Preprocessing stage of the CAP2 pipeline, for our purposes this only generates adapter free reads
+cap2 run pipeline --stage pre --workers 1 --threads 36 -c /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/ISO5.txt
+
+cap2 run pipeline --stage pre --workers 1 --threads 36 -c /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/ISO68.txt

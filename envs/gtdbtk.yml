@@ -1,0 +1,6 @@
+name: gtdbtk-1.3.0
+channels:
+  - defaults
+dependencies:
+  - gtdbtk=1.3.0
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/gtdbtk-1.3.0

@@ -1,0 +1,52 @@
+2_10
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_10/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_2
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_2/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_4
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_4/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_5
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_5/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_6
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_6/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_7
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_7/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_8
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_8/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+2_9
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/2_9/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_1
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_1/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_3
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_3/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_4
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_4/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_5
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_5/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_6
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_6/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_8
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_8/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+3_9
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/3_9/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_1
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_1/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_2
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_2/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_3
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_3/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_4
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_4/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_6
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_6/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_7
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_7/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+4_8
+/vortexfs1/omics/env-bio/collaboration/clean_room/output/kraken2/4_8/report_default.kreport /vortexfs1/omics/env-bio/collaboration/clean_room/output/biom-files/.kreport
+Traceback (most recent call last):
+  File "/vortexfs1/home/anmeyer/.local/bin/kraken-biom", line 8, in <module>
+    sys.exit(main())
+  File "/vortexfs1/home/anmeyer/.local/lib/python3.8/site-packages/kraken_biom.py", line 371, in main
+    sample_counts, taxa = process_samples(args.kraken_reports, 
+  File "/vortexfs1/home/anmeyer/.local/lib/python3.8/site-packages/kraken_biom.py", line 147, in process_samples
+    raise RuntimeError("ERROR: File '{}' not found.".format(krep_fp))
+RuntimeError: ERROR: File '2_10_.kreport' not found.

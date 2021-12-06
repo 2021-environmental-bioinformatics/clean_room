@@ -1,0 +1,353 @@
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+2 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/2_4_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/2_10_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_1_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+1 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_5_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_4_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_6_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/3_9_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_6_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_7_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/dRep", line 32, in <module>
+    Controller().parseArguments(args)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 100, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/controller.py", line 48, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_workflows.py", line 29, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_filter.py", line 66, in d_filter_wrapper
+    bdb = drep.d_cluster.utils.load_genomes(kwargs['genomes'])
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/site-packages/drep/d_cluster/utils.py", line 603, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /vortexfs1/omics/env-bio/collaboration/clean_room/output/metabat2/ISO5/bins/4_8_BINS/*.fa is not a file
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+15 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+4 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+24 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+7 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+17 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+2 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+12 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+9 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+8 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+9 genomes were input to dRep
+Calculating genome info of genomes
+100.00% of genomes passed length filtering
+Running prodigal
+Past prodigal runs found- will not re-run
+Running checkM
+Program checkm is not working!! Im going to crash now

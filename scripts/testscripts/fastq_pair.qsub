@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=fastq_pair
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=mbaldes@mit.edu
+#SBATCH	--ntasks=1
+#SBATCH	--cpus-per-task=36
+#SBATCH	--mem=180G
+#SBATCH	--time=12:00:00
+#SBATCH	--output=fastq_pair_%j.log
+#export OMP_NUM_THREADS=36
+
+
+#Troublesome samples
+declare -a Samples=("3_7" "4_5")
+
+#Returns paired reads and disregards single reads to ensure same read number in forward and reverse reads
+for sample in ${Samples[@]}
+do
+fastq_pair /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/${sample}.1.fq /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/${sample}.2.fq 
+done

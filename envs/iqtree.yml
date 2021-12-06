@@ -1,0 +1,6 @@
+name: trees
+channels:
+  - defaults
+dependencies:
+  - iqtree
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/trees

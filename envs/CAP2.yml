@@ -1,0 +1,6 @@
+name: Cap2
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2

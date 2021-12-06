@@ -1,0 +1,600 @@
+Failed to import extension module: "covid"
+Failed to import extension module: "preclassify"
+Failed to import extension module: "strains"
+Failed to import extension module: "tcems"
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/config.py:12: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.blob = load(open(filename).read())
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/parameter.py:279: UserWarning: Parameter "python" with value "3" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+[DEBUG] <luigi> (2021-11-12 17:31:36,570): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 2_4/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,573): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 2_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,575): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_509cc1af83   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,575): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,579): Checking if <CapTask::cap2::remove_human::0a2556edb58b 2_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,581): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_509cc1af83   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,581): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,581): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,581): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,582): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 2_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,582): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_509cc1af83   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,583): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,593): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,594): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_509cc1af83   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,594): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,595): Checking if <CapTask::cap2::base_reads::248514bc41fc 2_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,624): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_509cc1af83   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,624): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_509cc1af83   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,624): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,624): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,625): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,625): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,626): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,626): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,626): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,627): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,627): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,627): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,627): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,627): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 2_10/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,628): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 2_10/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,629): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_093308f3a5   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,629): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,629): Checking if <CapTask::cap2::remove_human::0a2556edb58b 2_10/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,630): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_093308f3a5   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,630): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,630): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,630): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,631): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 2_10/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,631): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_093308f3a5   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,631): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,632): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,632): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_093308f3a5   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,632): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,632): Checking if <CapTask::cap2::base_reads::248514bc41fc 2_10/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,648): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_093308f3a5   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,649): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_093308f3a5   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,649): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,649): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,649): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,649): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,650): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,650): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,650): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,650): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,650): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,651): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,651): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,651): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_1/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,652): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_1/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,653): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_700972c8db   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,653): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,653): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_1/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,654): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_700972c8db   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,654): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,654): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,654): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,654): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_1/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,655): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_700972c8db   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,655): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,655): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,656): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_700972c8db   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,656): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,656): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_1/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,686): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_700972c8db   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,686): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_700972c8db   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,687): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,687): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,687): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,687): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,687): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,687): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,688): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,688): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,688): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,688): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,689): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,689): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_3/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,690): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_3/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,691): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_941dcb97e2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,691): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,691): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_3/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,692): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_941dcb97e2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,692): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,692): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,692): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,692): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_3/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,693): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_941dcb97e2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,693): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,693): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,694): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_941dcb97e2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,694): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,694): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_3/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,727): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_941dcb97e2   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,727): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_941dcb97e2   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,728): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,728): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,728): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,728): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,728): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,729): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,729): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,729): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,729): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,730): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,730): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,730): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_5/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,733): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_5/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,734): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_01f51992d2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,734): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,734): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_5/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,735): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_01f51992d2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,735): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,735): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,735): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,735): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_5/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,736): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_01f51992d2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,736): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,736): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,737): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_01f51992d2   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,737): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,737): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_5/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,772): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_01f51992d2   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,772): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_01f51992d2   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,772): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,772): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,773): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,773): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,773): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,773): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,774): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,774): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,774): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,774): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,774): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,775): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_4/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,776): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,776): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_156fc3292c   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,776): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,776): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,777): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_156fc3292c   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,777): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,777): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,778): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,778): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,778): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_156fc3292c   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,778): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,779): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,779): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_156fc3292c   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,779): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,779): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_4/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,813): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_156fc3292c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,813): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_156fc3292c   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,814): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,814): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,814): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,814): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,814): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,815): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,815): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,815): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,815): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,815): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,816): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,816): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_6/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,817): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,817): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_2ef39bc5bb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,817): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,818): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,818): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_2ef39bc5bb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,818): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,819): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,819): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,819): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,819): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_2ef39bc5bb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,820): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,820): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,820): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_2ef39bc5bb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,820): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,820): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,836): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_2ef39bc5bb   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,836): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_2ef39bc5bb   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,837): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,837): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,837): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,837): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,837): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,838): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,838): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,838): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,838): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,838): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,839): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,839): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 3_9/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,840): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 3_9/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,840): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_9ead3459c3   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,840): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,841): Checking if <CapTask::cap2::remove_human::0a2556edb58b 3_9/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,841): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_9ead3459c3   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,841): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,842): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,842): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,842): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 3_9/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,843): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_9ead3459c3   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,843): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,843): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,843): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_9ead3459c3   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,843): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,844): Checking if <CapTask::cap2::base_reads::248514bc41fc 3_9/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,860): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_9ead3459c3   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,861): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_9ead3459c3   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,861): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,861): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,861): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,861): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,861): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,862): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,862): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,862): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,862): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,863): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,863): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,863): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 4_6/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,864): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 4_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,865): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_dd70dc9a30   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,865): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,865): Checking if <CapTask::cap2::remove_human::0a2556edb58b 4_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,866): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_dd70dc9a30   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,866): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,866): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,866): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,866): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 4_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,867): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_dd70dc9a30   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,867): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,867): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,868): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_dd70dc9a30   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,868): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,868): Checking if <CapTask::cap2::base_reads::248514bc41fc 4_6/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,892): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_dd70dc9a30   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,892): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_dd70dc9a30   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,892): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,892): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,893): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,893): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,893): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,893): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,893): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,893): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,894): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,894): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,894): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,894): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 4_7/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,895): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 4_7/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,896): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_e3fa4745eb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,896): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,896): Checking if <CapTask::cap2::remove_human::0a2556edb58b 4_7/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,897): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_e3fa4745eb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,897): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,897): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,897): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,897): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 4_7/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,898): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_e3fa4745eb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,898): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,898): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,899): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_e3fa4745eb   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,899): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,899): Checking if <CapTask::cap2::base_reads::248514bc41fc 4_7/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,920): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_e3fa4745eb   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,920): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_e3fa4745eb   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,920): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,920): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,921): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,921): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,921): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,921): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,921): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,922): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,922): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,922): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,922): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,922): Checking if <CapTask::cap2::clean_reads::0a2556ed3663 4_8/> is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,925): Checking if <CapTask::cap2::error_corrected_reads::2e2a15486631 4_8/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,926): Informed scheduler that task   CleanReads_True__vortexfs1_omics_36_64e4a460c4   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,926): Checking if CondaPackage(package=spades, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=spades.py, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,926): Checking if <CapTask::cap2::remove_human::0a2556edb58b 4_8/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,927): Informed scheduler that task   ErrorCorrectReads_True__vortexfs1_omics_36_64e4a460c4   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,927): Checking if CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,927): Checking if CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,927): Checking if HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,927): Checking if <CapTask::cap2::remove_mouse::8c80eaf906e3 4_8/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,928): Informed scheduler that task   RemoveHumanReads_True__vortexfs1_omics_36_64e4a460c4   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,928): Checking if MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,928): Checking if <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,929): Informed scheduler that task   RemoveMouseReads_True__vortexfs1_omics_36_64e4a460c4   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,929): Checking if CondaPackage(package=adapterremoval, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=AdapterRemoval, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[DEBUG] <luigi> (2021-11-12 17:31:36,929): Checking if <CapTask::cap2::base_reads::248514bc41fc 4_8/> is complete
+[INFO] <luigi> (2021-11-12 17:31:36,949): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_64e4a460c4   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,949): Informed scheduler that task   BaseReads_True__vortexfs1_omics_36_64e4a460c4   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,949): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_2a3fcd86f6   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:31:36,949): Checking if CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3) is complete
+[INFO] <luigi> (2021-11-12 17:31:36,950): Informed scheduler that task   MouseRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[DEBUG] <luigi> (2021-11-12 17:31:36,950): Checking if CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml) is complete
+[DEBUG] <cap2> (2021-11-12 17:31:36,950): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <luigi> (2021-11-12 17:31:36,950): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,950): Informed scheduler that task   CondaEnv__vortexfs1_omics_CAP_v2_3_f08c4770cf   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,951): Informed scheduler that task   HumanRemovalDB_True__vortexfs1_omics_1_9973060bdc   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,951): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,951): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   PENDING
+[INFO] <luigi> (2021-11-12 17:31:36,951): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f35dfb813a   has status   DONE
+[INFO] <luigi> (2021-11-12 17:31:36,951): Done scheduling tasks
+[INFO] <luigi> (2021-11-12 17:31:36,951): Running Worker with 1 processes
+[DEBUG] <luigi> (2021-11-12 17:31:36,951): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:31:36,952): Pending tasks: 60
+[INFO] <luigi> (2021-11-12 17:31:36,952): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 17:31:36,952): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py:81: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  deps = yaml.load(f)
+[INFO] <cap2> (2021-11-12 17:31:36,970): conda-installing: samtools=1.09 with conda install -p vendor/conda/CAP_v2 -c bioconda samtools=1.09 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining samtools=1.09:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__unix==0=0:  20%|██        | 1/5 [00:00<00:00, 30.46it/s]Examining python=3.9:  40%|████      | 2/5 [00:00<00:00, 60.65it/s]             Examining @/linux-64::__archspec==1=x86_64:  60%|██████    | 3/5 [00:00<00:00, 26.99it/s]Examining @/linux-64::__archspec==1=x86_64:  80%|████████  | 4/5 [00:00<00:00, 35.96it/s]Examining @/linux-64::__glibc==2.17=0:  80%|████████  | 4/5 [00:00<00:00, 35.96it/s]                                                                                         Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for samtools python:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for samtools python __glibc:  20%|██        | 1/5 [00:00<00:00, 11.17it/s]                                                                                             
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found to be incompatible with each other:
+
+Output in format: Requested package -> Available versions
+
+Package libgcc-ng conflicts for:
+samtools=1.09 -> libgcc-ng[version='>=4.9|>=7.3.0']
+samtools=1.09 -> ncurses[version='>=6.1,<6.2.0a0'] -> libgcc-ng[version='>=7.2.0|>=7.5.0']
+
+Package _libgcc_mutex conflicts for:
+python=3.9 -> libgcc-ng[version='>=7.5.0'] -> _libgcc_mutex[version='*|0.1',build=main]
+samtools=1.09 -> libgcc-ng[version='>=7.3.0'] -> _libgcc_mutex[version='*|0.1',build=main]The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - feature:|@/linux-64::__glibc==2.17=0
+  - python=3.9 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'samtools=1.09', '-y']
+[ERROR] <luigi> (2021-11-12 17:31:48,026): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) failed    CondaPackage(package=samtools=1.09, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=samtools, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda samtools=1.09 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 17:31:48,066): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:31:48,069): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_8c423a199c   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 17:31:48,069): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:31:48,070): Pending tasks: 60
+[INFO] <luigi> (2021-11-12 17:31:48,070): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 17:31:48,070): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <cap2> (2021-11-12 17:31:48,077): conda-installing: bowtie2 with conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining bowtie2:   0%|          | 0/5 [00:00<?, ?it/s]     Examining @/linux-64::__glibc==2.17=0:  20%|██        | 1/5 [00:00<00:03,  1.26it/s]Examining @/linux-64::__glibc==2.17=0:  40%|████      | 2/5 [00:00<00:01,  2.52it/s]Examining python=3.9:  40%|████      | 2/5 [00:00<00:01,  2.52it/s]                 Examining @/linux-64::__unix==0=0:  60%|██████    | 3/5 [00:00<00:00,  2.52it/s]Examining @/linux-64::__archspec==1=x86_64:  80%|████████  | 4/5 [00:00<00:00,  2.52it/s]                                                                                         Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 python:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 __glibc python:  20%|██        | 1/5 [00:00<00:00, 12.79it/s]                                                                                            
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found to be incompatible with each other:
+
+Output in format: Requested package -> Available versionsThe following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - feature:|@/linux-64::__glibc==2.17=0
+  - bowtie2 -> libgcc-ng[version='>=9.3.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'bowtie2', '-y']
+[ERROR] <luigi> (2021-11-12 17:31:58,469): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) failed    CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 17:31:58,472): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:31:58,474): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_42cc7e4d64   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 17:31:58,475): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:31:58,475): Pending tasks: 60
+[INFO] <luigi> (2021-11-12 17:31:58,475): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/>
+[DEBUG] <cap2> (2021-11-12 17:31:58,507): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/>
+[DEBUG] <cap2> (2021-11-12 17:31:58,507): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/>
+[DEBUG] <cap2> (2021-11-12 17:32:04,011): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/>
+[INFO] <luigi> (2021-11-12 17:32:04,023): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 2_4/>
+[DEBUG] <luigi> (2021-11-12 17:32:04,024): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:32:04,024): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_509cc1af83   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:32:04,024): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:32:04,025): Pending tasks: 59
+[INFO] <luigi> (2021-11-12 17:32:04,025): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3)
+[DEBUG] <cap2> (2021-11-12 17:32:04,025): CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml): self.complete() => ispath(vendor/conda/CAP_v2) = True 
+[INFO] <cap2> (2021-11-12 17:32:04,038): conda-installing: bowtie2==2.4.1 with conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2==2.4.1 -y
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]Examining bowtie2==2.4.1:   0%|          | 0/5 [00:00<?, ?it/s]Examining @/linux-64::__unix==0=0:  20%|██        | 1/5 [00:00<00:00, 22.29it/s]Examining @/linux-64::__archspec==1=x86_64:  40%|████      | 2/5 [00:00<00:00, 44.45it/s]Examining python=3.9:  60%|██████    | 3/5 [00:00<00:00, 66.54it/s]                      Examining @/linux-64::__glibc==2.17=0:  80%|████████  | 4/5 [00:00<00:00, 32.57it/s]Examining @/linux-64::__glibc==2.17=0: 100%|██████████| 5/5 [00:00<00:00, 40.68it/s]                                                                                    Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 python:   0%|          | 0/5 [00:00<?, ?it/s]Examining conflict for bowtie2 python __glibc:  20%|██        | 1/5 [00:00<00:00, 56.36it/s]                                                                                            
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - bowtie2==2.4.1 -> python[version='>=3.6,<3.7.0a0|>=3.7,<3.8.0a0|>=3.8,<3.9.0a0']
+
+Your python: python=3.9
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+The following specifications were found to be incompatible with your system:
+
+  - feature:/linux-64::__glibc==2.17=0
+  - feature:|@/linux-64::__glibc==2.17=0
+  - bowtie2==2.4.1 -> libgcc-ng[version='>=7.5.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.17
+
+
+Subprocess failed from /vortexfs1/omics/env-bio/collaboration/clean_room/raw_data: ['conda', 'install', '-p', 'vendor/conda/CAP_v2', '-c', 'bioconda', 'bowtie2==2.4.1', '-y']
+[ERROR] <luigi> (2021-11-12 17:32:12,099): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) failed    CondaPackage(package=bowtie2==2.4.1, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2-build, channel=bioconda, env=CAP_v2, version=None, python=3)
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 191, in run
+    new_deps = self._run_get_new_deps()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/luigi/worker.py", line 133, in _run_get_new_deps
+    task_gen = self.task.run()
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 194, in run
+    self._env.install(self.package, self.channel)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/pipeline/utils/conda.py", line 110, in install
+    subprocess.check_call(' '.join(cmd), shell=True)
+  File "/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/lib/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'conda install -p vendor/conda/CAP_v2 -c bioconda bowtie2==2.4.1 -y' returned non-zero exit status 1.
+[DEBUG] <luigi> (2021-11-12 17:32:12,104): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:32:12,107): Informed scheduler that task   CondaPackage_bioconda__vortexfs1_omics_CAP_v2_f2218ce9ba   has status   FAILED
+[DEBUG] <luigi> (2021-11-12 17:32:12,107): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:32:12,108): Pending tasks: 59
+[INFO] <luigi> (2021-11-12 17:32:12,108): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/>
+[DEBUG] <cap2> (2021-11-12 17:32:12,134): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/>
+[DEBUG] <cap2> (2021-11-12 17:32:12,134): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/>
+[DEBUG] <cap2> (2021-11-12 17:32:14,183): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/>
+[INFO] <luigi> (2021-11-12 17:32:14,195): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 2_10/>
+[DEBUG] <luigi> (2021-11-12 17:32:14,196): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:32:14,196): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_093308f3a5   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:32:14,196): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:32:14,197): Pending tasks: 58
+[INFO] <luigi> (2021-11-12 17:32:14,197): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/>
+[DEBUG] <cap2> (2021-11-12 17:32:14,230): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/>
+[DEBUG] <cap2> (2021-11-12 17:32:14,230): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/>
+[DEBUG] <cap2> (2021-11-12 17:32:18,503): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/>
+[INFO] <luigi> (2021-11-12 17:32:18,516): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_1/>
+[DEBUG] <luigi> (2021-11-12 17:32:18,516): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:32:18,517): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_700972c8db   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:32:18,517): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:32:18,517): Pending tasks: 57
+[INFO] <luigi> (2021-11-12 17:32:18,518): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/>
+[DEBUG] <cap2> (2021-11-12 17:32:18,537): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/>
+[DEBUG] <cap2> (2021-11-12 17:32:18,537): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/>
+[DEBUG] <cap2> (2021-11-12 17:33:04,307): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/>
+[INFO] <luigi> (2021-11-12 17:33:04,320): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_3/>
+[DEBUG] <luigi> (2021-11-12 17:33:04,321): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:33:04,321): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_941dcb97e2   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:33:04,321): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:33:04,322): Pending tasks: 56
+[INFO] <luigi> (2021-11-12 17:33:04,322): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/>
+[DEBUG] <cap2> (2021-11-12 17:33:04,346): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/>
+[DEBUG] <cap2> (2021-11-12 17:33:04,346): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/>
+[DEBUG] <cap2> (2021-11-12 17:33:10,028): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/>
+[INFO] <luigi> (2021-11-12 17:33:10,041): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_5/>
+[DEBUG] <luigi> (2021-11-12 17:33:10,041): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:33:10,042): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_01f51992d2   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:33:10,042): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:33:10,043): Pending tasks: 55
+[INFO] <luigi> (2021-11-12 17:33:10,043): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/>
+[DEBUG] <cap2> (2021-11-12 17:33:10,059): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/>
+[DEBUG] <cap2> (2021-11-12 17:33:10,059): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/>
+[DEBUG] <cap2> (2021-11-12 17:33:15,238): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/>
+[INFO] <luigi> (2021-11-12 17:33:15,251): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_4/>
+[DEBUG] <luigi> (2021-11-12 17:33:15,251): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:33:15,251): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_156fc3292c   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:33:15,252): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:33:15,252): Pending tasks: 54
+[INFO] <luigi> (2021-11-12 17:33:15,252): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/>
+[DEBUG] <cap2> (2021-11-12 17:33:15,271): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/>
+[DEBUG] <cap2> (2021-11-12 17:33:15,271): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/>
+[DEBUG] <cap2> (2021-11-12 17:33:33,916): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/>
+[INFO] <luigi> (2021-11-12 17:33:33,929): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_6/>
+[DEBUG] <luigi> (2021-11-12 17:33:33,929): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:33:33,929): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_2ef39bc5bb   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:33:33,929): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:33:33,930): Pending tasks: 53
+[INFO] <luigi> (2021-11-12 17:33:33,930): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/>
+[DEBUG] <cap2> (2021-11-12 17:33:33,954): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/>
+[DEBUG] <cap2> (2021-11-12 17:33:33,955): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/>
+[DEBUG] <cap2> (2021-11-12 17:33:40,260): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/>
+[INFO] <luigi> (2021-11-12 17:33:40,273): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 3_9/>
+[DEBUG] <luigi> (2021-11-12 17:33:40,273): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:33:40,274): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_9ead3459c3   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:33:40,274): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:33:40,275): Pending tasks: 52
+[INFO] <luigi> (2021-11-12 17:33:40,275): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/>
+[DEBUG] <cap2> (2021-11-12 17:33:40,295): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/>
+[DEBUG] <cap2> (2021-11-12 17:33:40,295): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/>
+[DEBUG] <cap2> (2021-11-12 17:34:22,253): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/>
+[INFO] <luigi> (2021-11-12 17:34:22,267): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 4_6/>
+[DEBUG] <luigi> (2021-11-12 17:34:22,267): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:34:22,268): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_dd70dc9a30   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:34:22,268): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:34:22,268): Pending tasks: 51
+[INFO] <luigi> (2021-11-12 17:34:22,268): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/>
+[DEBUG] <cap2> (2021-11-12 17:34:22,291): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/>
+[DEBUG] <cap2> (2021-11-12 17:34:22,291): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/>
+[DEBUG] <cap2> (2021-11-12 17:34:57,345): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/>
+[INFO] <luigi> (2021-11-12 17:34:57,359): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 4_7/>
+[DEBUG] <luigi> (2021-11-12 17:34:57,359): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:34:57,360): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_e3fa4745eb   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:34:57,360): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:34:57,360): Pending tasks: 50
+[INFO] <luigi> (2021-11-12 17:34:57,361): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) running   <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/>
+[DEBUG] <cap2> (2021-11-12 17:34:57,387): starting run for <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/>
+[DEBUG] <cap2> (2021-11-12 17:34:57,387): running module for <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/>
+[DEBUG] <cap2> (2021-11-12 17:36:08,391): writing run metadata for <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/>
+[INFO] <luigi> (2021-11-12 17:36:08,404): [pid 111288] Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) done      <CapTask::cap2::adapter_removal::0a2556ed213e 4_8/>
+[DEBUG] <luigi> (2021-11-12 17:36:08,404): 1 running tasks, waiting for next task to finish
+[INFO] <luigi> (2021-11-12 17:36:08,405): Informed scheduler that task   AdapterRemoval_True__vortexfs1_omics_36_64e4a460c4   has status   DONE
+[DEBUG] <luigi> (2021-11-12 17:36:08,405): Asking scheduler for work...
+[DEBUG] <luigi> (2021-11-12 17:36:08,406): Done
+[DEBUG] <luigi> (2021-11-12 17:36:08,406): There are no more tasks to run at this time
+[DEBUG] <luigi> (2021-11-12 17:36:08,406): There are 49 pending tasks possibly being run by other workers
+[DEBUG] <luigi> (2021-11-12 17:36:08,406): There are 49 pending tasks unique to this worker
+[DEBUG] <luigi> (2021-11-12 17:36:08,406): There are 49 pending tasks last scheduled by this worker
+[INFO] <luigi> (2021-11-12 17:36:08,406): Worker Worker(salt=811190042, workers=1, host=pn127, username=matthew.baldes, pid=111288) was stopped. Shutting down Keep-Alive thread
+[INFO] <luigi> (2021-11-12 17:36:08,414): 
+===== Luigi Execution Summary =====
+
+Scheduled 74 tasks of which:
+* 14 complete ones were encountered:
+    - 11 BaseReads(...)
+    - 1 CondaEnv(name=CAP_v2, python=3, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml)
+    - 2 CondaPackage(...)
+* 11 ran successfully:
+    - 11 AdapterRemoval(...)
+* 3 failed:
+    - 3 CondaPackage(package=bowtie2, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, executable=bowtie2, channel=bioconda, env=CAP_v2, version=None, python=3) ...
+* 46 were left pending, among these:
+    * 46 had failed dependencies:
+        - 11 CleanReads(...)
+        - 11 ErrorCorrectReads(...)
+        - 1 HumanRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1)
+        - 1 MouseRemovalDB(max_ram=0, check_versions=True, config_filename=/vortexfs1/omics/env-bio/collaboration/clean_room/raw_data/config.yaml, cores=1)
+        - 11 RemoveHumanReads(...)
+        ...
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+

@@ -1,0 +1,2 @@
+/cm/local/apps/slurm/var/spool/job1805062/slurm_script: line 24: syntax error near unexpected token `)'
+/cm/local/apps/slurm/var/spool/job1805062/slurm_script: line 24: `mv IS)6-8/${sample}* ISO5'

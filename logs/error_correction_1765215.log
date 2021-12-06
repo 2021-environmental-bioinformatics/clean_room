@@ -1,0 +1,489 @@
+Command line: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/spades.py	--only-error-correction	--meta	-t	36	-1	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.1.fq	-2	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.2.fq	-o	/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.12
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+
+Output dir: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.1.fq']
+      right reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Other parameters:
+  Dir for temp files: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/tmp
+  Threads: 36
+  Memory limit (in Gb): 187
+
+
+======= SPAdes pipeline started. Log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from refs/heads/spades_3.13.1, git revision 9a9d54db2ff9abaac718155bf74c12ec9464e8ca
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 36
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 187 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.024     4M / 4M    ERROR   General                 (main.cpp                  :  89)   Failed to determine offset! Specify it manually and restart, please!
+
+
+== Error ==  system call for: "['/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer', '/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/3_7/corrected/configs/config.info']" finished abnormally, err code: 255
+
+In case you have troubles running SPAdes, you can write to spades.support@cab.spbu.ru
+or report an issue on our GitHub repository github.com/ablab/spades
+Please provide us with params.txt and spades.log files from the output directory.
+Command line: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/spades.py	--only-error-correction	--meta	-t	36	-1	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq	-2	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq	-o	/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.12
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+
+Output dir: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq']
+      right reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Other parameters:
+  Dir for temp files: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/tmp
+  Threads: 36
+  Memory limit (in Gb): 187
+
+
+======= SPAdes pipeline started. Log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from refs/heads/spades_3.13.1, git revision 9a9d54db2ff9abaac718155bf74c12ec9464e8ca
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 36
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 187 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.001     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.001     4M / 4M    INFO   K-mer Counting           (kmer_data.cpp             : 280)   Estimating k-mer count
+  0:00:00.183   580M / 580M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+  0:01:39.712   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 23272390 reads
+  0:01:39.712   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  0:03:24.268   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 46544780 reads
+  0:03:24.268   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 299)   Total 46544780 reads processed
+  0:03:26.333   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 306)   Estimated 8364444251 distinct kmers
+  0:03:26.335   144M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 311)   Filtering singleton k-mers
+42 8 0
+nslots: 17179869184
+bits per slot: 8 range: 0000040000000000
+  0:03:26.335    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+  0:23:30.635    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 23272390 reads
+  0:23:30.635    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  0:41:51.703    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 46544780 reads
+  0:41:51.703    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 331)   Total 46544780 reads processed
+  0:41:51.726    20G / 20G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:41:51.726    20G / 20G   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 576 files using 36 threads. This might take a while.
+  0:41:51.727    20G / 20G   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 51200
+  0:41:51.727    20G / 20G   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 1.54246 Gb
+  0:41:51.727    20G / 20G   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 116508
+  0:41:53.769    40G / 40G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+  0:43:06.312    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 14951309 reads
+  0:43:59.623    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 23272390 reads
+  0:43:59.623    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  0:45:37.814    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 40678630 reads
+  0:46:20.646    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 46544780 reads
+  0:46:20.646    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 46544780 reads processed
+  0:46:21.896    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:46:58.560    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 1472123402 kmers in total.
+  0:46:58.561    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:47:15.561    20G / 41G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:47:58.786    21G / 41G   INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:48:07.031    21G / 41G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 682690164 bytes occupied (3.70996 bits per kmer).
+  0:48:07.087   880M / 41G   INFO   K-mer Counting           (kmer_data.cpp             : 356)   Arranging kmers in hash map order
+  0:57:07.832    22G / 41G   INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  1:08:20.134    22G / 41G   INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  1:14:37.499    22G / 71G   INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 988282384
+  1:14:37.527    11G / 71G   INFO   K-mer Counting           (kmer_data.cpp             : 376)   Collecting K-mer information, this takes a while.
+  1:14:47.076    44G / 71G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq
+  1:16:33.993    44G / 71G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  1:18:18.308    44G / 71G   INFO   K-mer Counting           (kmer_data.cpp             : 389)   Collection done, postprocessing.
+  1:18:23.682    44G / 71G   INFO   K-mer Counting           (kmer_data.cpp             : 403)   There are 1472123402 kmers in total. Among them 13129588 (0.891881%) are singletons.
+  1:18:23.682    44G / 71G   INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 169959 non-read kmers were generated.
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 895848688. Among them 789252782 (88.1011%) are good
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 5795819. Among them 5762763 (99.4297%) are good
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 114854444. Among them 107288710 (93.4128%) are good
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 5.02027 kmers
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.30526
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 902304255
+  1:26:42.987    44G / 71G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.902715,0.0223402,0.0332235,0.0417212),(0.0292621,0.88013,0.0348673,0.055741),(0.0522725,0.0322101,0.883718,0.0317991),(0.0392586,0.0309011,0.0207951,0.909045))
+  1:26:43.834    44G / 71G   INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  1:26:43.834    44G / 71G   INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 36 threads.
+  1:30:08.430    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 44841559 new k-mers.
+  1:33:32.806    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 2744080 new k-mers.
+  1:36:57.836    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 254628 new k-mers.
+  1:40:23.073    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 26937 new k-mers.
+  1:43:48.254    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 4 produced 4002 new k-mers.
+  1:47:13.631    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 5 produced 525 new k-mers.
+  1:50:38.974    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 6 produced 12 new k-mers.
+  1:54:03.939    44G / 71G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 7 produced 0 new k-mers.
+  1:54:03.939    44G / 71G   INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  1:54:03.939    44G / 71G   INFO    General                 (hammer_tools.cpp          : 220)   Starting read correction in 36 threads.
+  1:54:03.939    44G / 71G   INFO    General                 (hammer_tools.cpp          : 233)   Correcting pair of reads: /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.1.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_3.2.fq
+  1:54:27.167    48G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 0 of 3600000 reads.
+  1:55:30.946    49G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 0
+  1:55:36.407    49G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 0
+  1:55:58.555    49G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 1 of 3600000 reads.
+  1:57:01.421    49G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 1
+  1:57:06.768    49G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 1
+  1:57:28.712    49G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 2 of 3600000 reads.
+  1:58:30.490    48G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 2
+  1:58:35.729    48G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 2
+  1:58:57.579    48G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 3 of 3600000 reads.
+  1:59:58.674    48G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 3
+  2:00:04.083    48G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 3
+  2:00:25.847    48G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 4 of 3600000 reads.
+  2:01:25.298    48G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 4
+  2:01:30.745    48G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 4
+  2:01:52.446    48G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 5 of 3600000 reads.
+  2:02:51.302    48G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 5
+  2:02:56.975    48G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 5
+  2:03:07.024    48G / 71G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 6 of 1672390 reads.
+  2:03:35.017    48G / 71G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 6
+  2:03:37.484    48G / 71G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 6
+  2:03:40.118    44G / 71G   INFO    General                 (hammer_tools.cpp          : 274)   Correction done. Changed 38287788 bases in 13460256 reads.
+  2:03:40.118    44G / 71G   INFO    General                 (hammer_tools.cpp          : 275)   Failed to correct 6086885 bases out of 6956980862.
+  2:03:40.253   164M / 71G   INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/corrected.yaml
+  2:03:40.255   164M / 71G   INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+== Compressing corrected reads (with gzip)
+
+== Dataset description file was created: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/corrected.yaml
+
+
+===== Read error correction finished. 
+
+ * Corrected reads are in /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/corrected/
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_3/spades.log
+
+Thank you for using SPAdes!
+Command line: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/spades.py	--only-error-correction	--meta	-t	36	-1	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq	-2	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq	-o	/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.12
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+
+Output dir: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq']
+      right reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Other parameters:
+  Dir for temp files: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/tmp
+  Threads: 36
+  Memory limit (in Gb): 187
+
+
+======= SPAdes pipeline started. Log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from refs/heads/spades_3.13.1, git revision 9a9d54db2ff9abaac718155bf74c12ec9464e8ca
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/corrected/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 36
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 187 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.039     4M / 4M    INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.039     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.039     4M / 4M    INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.039     4M / 4M    INFO   K-mer Counting           (kmer_data.cpp             : 280)   Estimating k-mer count
+  0:00:00.225   580M / 580M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq
+  0:01:46.478   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 24713528 reads
+  0:01:46.478   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq
+  0:03:38.749   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 49427056 reads
+  0:03:38.749   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 299)   Total 49427056 reads processed
+  0:03:40.816   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 306)   Estimated 9322171095 distinct kmers
+  0:03:40.818   144M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 311)   Filtering singleton k-mers
+43 8 0
+nslots: 34359738368
+bits per slot: 8 range: 0000080000000000
+  0:03:40.818    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq
+  0:26:08.557    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 24713528 reads
+  0:26:08.557    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq
+  0:47:09.366    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 49427056 reads
+  0:47:09.366    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 331)   Total 49427056 reads processed
+  0:47:09.372    40G / 40G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:47:09.372    40G / 40G   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 576 files using 36 threads. This might take a while.
+  0:47:09.373    40G / 40G   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 51200
+  0:47:09.373    40G / 40G   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 1.35482 Gb
+  0:47:09.373    40G / 40G   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 116508
+  0:47:11.525    60G / 60G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq
+  0:48:25.865    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 15543014 reads
+  0:49:20.816    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 24713528 reads
+  0:49:20.816    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq
+  0:51:05.775    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 44033615 reads
+  0:51:44.069    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 49427056 reads
+  0:51:44.069    60G / 61G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 49427056 reads processed
+  0:51:45.304    40G / 61G   INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:52:20.448    40G / 61G   INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 1457926172 kmers in total.
+  0:52:20.448    40G / 61G   INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:52:37.198    40G / 61G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:53:21.709    41G / 61G   INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:53:29.778    41G / 61G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 676064912 bytes occupied (3.70973 bits per kmer).
+  0:53:29.891   888M / 61G   INFO   K-mer Counting           (kmer_data.cpp             : 356)   Arranging kmers in hash map order
+  1:02:29.996    22G / 61G   INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  1:13:10.489    22G / 61G   INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  1:18:52.199    22G / 70G   INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 979348473
+  1:18:52.231    11G / 70G   INFO   K-mer Counting           (kmer_data.cpp             : 376)   Collecting K-mer information, this takes a while.
+  1:19:02.193    44G / 70G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq
+  1:20:54.431    44G / 70G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq
+  1:22:43.721    44G / 70G   INFO   K-mer Counting           (kmer_data.cpp             : 389)   Collection done, postprocessing.
+  1:22:49.033    44G / 70G   INFO   K-mer Counting           (kmer_data.cpp             : 403)   There are 1457926172 kmers in total. Among them 8351476 (0.572833%) are singletons.
+  1:22:49.033    44G / 70G   INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 219789 non-read kmers were generated.
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 886676608. Among them 765535120 (86.3376%) are good
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 5743282. Among them 5699373 (99.2355%) are good
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 112608748. Among them 103074315 (91.5331%) are good
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 5.0766 kmers
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.27711
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 874308808
+  1:32:52.560    44G / 70G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.895939,0.0258654,0.0344313,0.0437647),(0.0274918,0.875904,0.0494186,0.0471856),(0.0442344,0.0466662,0.879439,0.0296607),(0.0412544,0.0318797,0.0241454,0.902721))
+  1:32:53.338    44G / 70G   INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  1:32:53.338    44G / 70G   INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 36 threads.
+  1:36:32.671    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 40929167 new k-mers.
+  1:40:11.247    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 2078600 new k-mers.
+  1:43:50.078    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 158815 new k-mers.
+  1:47:28.487    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 15064 new k-mers.
+  1:51:05.916    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 4 produced 1299 new k-mers.
+  1:54:43.314    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 5 produced 222 new k-mers.
+  1:58:21.505    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 6 produced 26 new k-mers.
+  2:02:00.108    44G / 70G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 7 produced 0 new k-mers.
+  2:02:00.108    44G / 70G   INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  2:02:00.108    44G / 70G   INFO    General                 (hammer_tools.cpp          : 220)   Starting read correction in 36 threads.
+  2:02:00.108    44G / 70G   INFO    General                 (hammer_tools.cpp          : 233)   Correcting pair of reads: /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.1.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_4.2.fq
+  2:02:23.402    47G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 0 of 3600000 reads.
+  2:03:41.947    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 0
+  2:03:47.404    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 0
+  2:04:09.734    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 1 of 3600000 reads.
+  2:05:28.682    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 1
+  2:05:34.203    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 1
+  2:05:56.538    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 2 of 3600000 reads.
+  2:07:13.924    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 2
+  2:07:19.494    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 2
+  2:07:41.517    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 3 of 3600000 reads.
+  2:08:58.465    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 3
+  2:09:04.161    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 3
+  2:09:25.926    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 4 of 3600000 reads.
+  2:10:36.751    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 4
+  2:10:42.402    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 4
+  2:11:04.505    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 5 of 3600000 reads.
+  2:12:14.015    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 5
+  2:12:19.683    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 5
+  2:12:38.517    48G / 70G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 6 of 3113528 reads.
+  2:13:38.814    48G / 70G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 6
+  2:13:44.423    48G / 70G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 6
+  2:13:46.708    44G / 70G   INFO    General                 (hammer_tools.cpp          : 274)   Correction done. Changed 39593614 bases in 13091730 reads.
+  2:13:46.708    44G / 70G   INFO    General                 (hammer_tools.cpp          : 275)   Failed to correct 6125379 bases out of 7398130564.
+  2:13:46.843   180M / 70G   INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/corrected/corrected.yaml
+  2:13:46.845   180M / 70G   INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+== Compressing corrected reads (with gzip)
+
+== Dataset description file was created: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/corrected/corrected.yaml
+
+
+===== Read error correction finished. 
+
+ * Corrected reads are in /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/corrected/
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_4/spades.log
+
+Thank you for using SPAdes!
+Command line: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/bin/spades.py	--only-error-correction	--meta	-t	36	-1	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq	-2	/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq	-o	/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5	
+
+System information:
+  SPAdes version: 3.13.1
+  Python version: 3.6.12
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+
+Output dir: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5
+Mode: ONLY read error correction (without assembling)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq']
+      right reads: ['/vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Other parameters:
+  Dir for temp files: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/tmp
+  Threads: 36
+  Memory limit (in Gb): 187
+
+
+======= SPAdes pipeline started. Log can be found here: /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from refs/heads/spades_3.13.1, git revision 9a9d54db2ff9abaac718155bf74c12ec9464e8ca
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 36
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 187 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.035     4M / 4M    INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.036     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.036     4M / 4M    INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.036     4M / 4M    INFO   K-mer Counting           (kmer_data.cpp             : 280)   Estimating k-mer count
+  0:00:00.221   580M / 580M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq
+  0:01:33.367   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 21766647 reads
+  0:01:33.368   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq
+  0:02:12.298   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 30424279 reads
+  0:02:12.298   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 299)   Total 30424279 reads processed
+  0:02:14.440   720M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 306)   Estimated 5823591420 distinct kmers
+  0:02:14.442   144M / 720M  INFO   K-mer Counting           (kmer_data.cpp             : 311)   Filtering singleton k-mers
+42 8 0
+nslots: 17179869184
+bits per slot: 8 range: 0000040000000000
+  0:02:14.442    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq
+  0:32:32.724    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 21766647 reads
+  0:32:32.724    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq
+  0:45:00.606    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 30424279 reads
+  0:45:00.606    20G / 20G   INFO   K-mer Counting           (kmer_data.cpp             : 331)   Total 30424279 reads processed
+  0:45:00.615    20G / 20G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  0:45:00.615    20G / 20G   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 576 files using 36 threads. This might take a while.
+  0:45:00.616    20G / 20G   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 51200
+  0:45:00.616    20G / 20G   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 1.54246 Gb
+  0:45:00.616    20G / 20G   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 116508
+  0:45:02.740    40G / 40G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq
+  0:46:23.413    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 17158158 reads
+  0:46:58.040    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 21766647 reads
+  0:46:58.040    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq
+  0:47:51.520    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 30424279 reads
+  0:47:51.521    40G / 41G   INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 30424279 reads processed
+  0:47:52.750    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 120)   Starting k-mer counting.
+  0:48:11.107    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 127)   K-mer counting done. There are 844176878 kmers in total.
+  0:48:11.107    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 133)   Merging temporary buckets.
+  0:48:20.707    20G / 41G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 314)   Building perfect hash indices
+  0:48:45.094    20G / 41G   INFO    General                 (kmer_index_builder.hpp    : 150)   Merging final buckets.
+  0:48:49.666    20G / 41G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 336)   Index built. Total 391455550 bytes occupied (3.7097 bits per kmer).
+  0:48:49.721   616M / 41G   INFO   K-mer Counting           (kmer_data.cpp             : 356)   Arranging kmers in hash map order
+  0:54:01.301    13G / 41G   INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  1:00:02.043    13G / 41G   INFO    General                 (main.cpp                  : 155)   Extracting clusters
+  1:03:08.872    13G / 42G   INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 592525330
+  1:03:08.889     6G / 42G   INFO   K-mer Counting           (kmer_data.cpp             : 376)   Collecting K-mer information, this takes a while.
+  1:03:14.554    25G / 42G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq
+  1:04:47.011    25G / 42G   INFO   K-mer Counting           (kmer_data.cpp             : 382)   Processing /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq
+  1:05:25.142    25G / 42G   INFO   K-mer Counting           (kmer_data.cpp             : 389)   Collection done, postprocessing.
+  1:05:28.228    25G / 42G   INFO   K-mer Counting           (kmer_data.cpp             : 403)   There are 844176878 kmers in total. Among them 6599998 (0.781826%) are singletons.
+  1:05:28.228    25G / 42G   INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 649)   Subclustering done. Total 100559 non-read kmers were generated.
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering statistics:
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)     Total singleton hamming clusters: 536755530. Among them 488047836 (90.9255%) are good
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton subclusters: 4064158. Among them 4052575 (99.715%) are good
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total non-singleton subcluster centers: 67256960. Among them 64203214 (95.4596%) are good
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Average size of non-trivial subcluster: 4.57358 kmers
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average number of sub-clusters per non-singleton cluster: 1.27885
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Total solid k-mers: 556303625
+  1:09:40.717    25G / 42G   INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Substitution probabilities: [4,4]((0.906869,0.021766,0.03155,0.0398152),(0.0239746,0.886118,0.0436104,0.0462968),(0.0430417,0.0405555,0.890255,0.0261474),(0.0373911,0.0287963,0.0200753,0.913737))
+  1:09:41.152    25G / 42G   INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  1:09:41.152    25G / 42G   INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 36 threads.
+  1:11:55.002    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 22656713 new k-mers.
+  1:14:08.287    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 1014779 new k-mers.
+  1:16:20.591    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 75353 new k-mers.
+  1:18:32.843    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 3 produced 7212 new k-mers.
+  1:20:44.982    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 4 produced 571 new k-mers.
+  1:22:57.248    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 5 produced 91 new k-mers.
+  1:25:09.399    25G / 42G   INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 6 produced 0 new k-mers.
+  1:25:09.399    25G / 42G   INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  1:25:09.399    25G / 42G   INFO    General                 (hammer_tools.cpp          : 220)   Starting read correction in 36 threads.
+  1:25:09.399    25G / 42G   INFO    General                 (hammer_tools.cpp          : 233)   Correcting pair of reads: /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq
+  1:25:32.666    29G / 42G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 0 of 3600000 reads.
+  1:26:28.970    30G / 42G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 0
+  1:26:34.305    30G / 42G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 0
+  1:26:56.807    30G / 42G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 1 of 3600000 reads.
+  1:27:51.986    30G / 42G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 1
+  1:27:57.366    30G / 42G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 1
+  1:28:06.340    30G / 42G   INFO    General                 (hammer_tools.cpp          : 168)   Prepared batch 2 of 1457632 reads.
+  1:28:29.087    30G / 42G   INFO    General                 (hammer_tools.cpp          : 175)   Processed batch 2
+  1:28:31.323    30G / 42G   INFO    General                 (hammer_tools.cpp          : 185)   Written batch 2
+  1:28:31.323    30G / 42G   ERROR   General                 (hammer_tools.cpp          : 189)   Pair of read files /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq contain unequal amount of reads
+
+
+== Error ==  system call for: "['/vortexfs1/home/matthew.baldes/.conda/envs/Cap2/share/spades-3.13.1-0/bin/spades-hammer', '/vortexfs1/omics/env-bio/collaboration/clean_room/output/error_corrected/4_5/corrected/configs/config.info']" finished abnormally, err code: 255
+
+In case you have troubles running SPAdes, you can write to spades.support@cab.spbu.ru
+or report an issue on our GitHub repository github.com/ablab/spades
+Please provide us with params.txt and spades.log files from the output directory.

@@ -1,0 +1,26 @@
+Failed to import extension module: "covid"
+Failed to import extension module: "preclassify"
+Failed to import extension module: "strains"
+Failed to import extension module: "tcems"
+Traceback (most recent call last):
+  File "/vortexfs1/home/matthew.baldes/.local/bin/cap2", line 8, in <module>
+    sys.exit(main())
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/cli.py", line 72, in cap_pipeline
+    samples = Sample.samples_from_manifest(manifest)
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/sample.py", line 32, in samples_from_manifest
+    samples.append(cls(*tkns))
+  File "/vortexfs1/home/matthew.baldes/.local/lib/python3.6/site-packages/cap2/sample.py", line 15, in __init__
+    raise CAPSampleError(f'kind {self.kind} is not one of {" ".join(DATA_TYPES)}')
+cap2.exceptions.CAPSampleError: kind $ is not one of short_read single_short_read paired_short_read

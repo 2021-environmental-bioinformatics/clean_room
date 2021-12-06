@@ -1,0 +1,3 @@
+/cm/local/apps/slurm/var/spool/job1711286/slurm_script: line 14: bowtie-build: command not found
+(ERR): "hg38" does not exist or is not a Bowtie 2 index
+Exiting now ...

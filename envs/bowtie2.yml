@@ -1,0 +1,6 @@
+name: bowtie2
+channels:
+  - defaults
+dependencies:
+  - bowtie2
+prefix: /vortexfs1/home/matthew.baldes/.conda/envs/bowtie2

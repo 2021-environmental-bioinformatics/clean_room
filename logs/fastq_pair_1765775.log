@@ -1,0 +1,8 @@
+Left paired: 53285		Right paired: 53285
+Left single: 1851428		Right single: 2010791
+Writing the paired reads to /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.1.fq.paired.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.2.fq.paired.fq.
+Writing the single reads to /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.1.fq.single.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/3_7.2.fq.single.fq
+Left paired: 21294		Right paired: 21294
+Left single: 1783321		Right single: 803052
+Writing the paired reads to /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq.paired.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq.paired.fq.
+Writing the single reads to /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.1.fq.single.fq and /vortexfs1/omics/env-bio/collaboration/clean_room/output/bowtie2/human/4_5.2.fq.single.fq
